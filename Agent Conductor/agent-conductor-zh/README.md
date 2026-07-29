@@ -10,18 +10,11 @@
 This is a private repository. 只有仓库所有者和已授权 collaborator 能获取插件；
 请先确保本机 Git 已登录可访问 `maaaaaa12138/Plugins`，不要共享私有仓库地址或凭据。
 
-直接添加 GitHub marketplace：
-
-```powershell
-codex plugin marketplace add maaaaaa12138/Plugins --ref main
-codex plugin add agent-conductor-zh@personal
-```
-
-也可以先克隆私有仓库，再从本地路径添加：
+先克隆私有仓库，再把其中的 `Agent Conductor` 子目录添加为 marketplace：
 
 ```powershell
 git clone git@github.com:maaaaaa12138/Plugins.git
-codex plugin marketplace add C:/path/to/Plugins
+codex plugin marketplace add "C:/path/to/Plugins/Agent Conductor"
 codex plugin add agent-conductor-zh@personal
 ```
 

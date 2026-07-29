@@ -8,7 +8,7 @@
       "name": "agent-conductor-zh",
       "source": {
         "source": "local",
-        "path": "./Agent Conductor/agent-conductor-zh"
+        "path": "./agent-conductor-zh"
       },
       "policy": {
         "installation": "AVAILABLE",

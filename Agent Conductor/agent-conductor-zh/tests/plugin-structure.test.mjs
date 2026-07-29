@@ -5,7 +5,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 
 const pluginRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const repoRoot = path.resolve(pluginRoot, "..", "..");
+const marketplaceRoot = path.resolve(pluginRoot, "..");
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -14,7 +14,7 @@ function readJson(file) {
 test("plugin and marketplace expose agent-conductor-zh", () => {
   const manifest = readJson(path.join(pluginRoot, ".codex-plugin", "plugin.json"));
   const marketplace = readJson(
-    path.join(repoRoot, ".agents", "plugins", "marketplace.json"),
+    path.join(marketplaceRoot, ".agents", "plugins", "marketplace.json"),
   );
   const entry = marketplace.plugins.find(
     (item) => item.name === "agent-conductor-zh",
@@ -32,7 +32,7 @@ test("plugin and marketplace expose agent-conductor-zh", () => {
     "https://github.com/maaaaaa12138/Plugins/tree/main/Agent%20Conductor/agent-conductor-zh",
   );
   assert.equal(manifest.skills, "./skills/");
-  assert.equal(entry.source.path, "./Agent Conductor/agent-conductor-zh");
+  assert.equal(entry.source.path, "./agent-conductor-zh");
   assert.deepEqual(entry.policy, {
     installation: "AVAILABLE",
     authentication: "ON_INSTALL",
@@ -45,10 +45,13 @@ test("plugin and marketplace expose agent-conductor-zh", () => {
 });
 
 test("plugin files keep LF endings so manifest hashes are stable", () => {
-  const attributes = fs.readFileSync(path.join(repoRoot, ".gitattributes"), "utf8");
+  const attributes = fs.readFileSync(
+    path.join(marketplaceRoot, ".gitattributes"),
+    "utf8",
+  );
   assert.match(
     attributes,
-    /^"Agent Conductor\/agent-conductor-zh\/\*\*" text eol=lf$/m,
+    /^agent-conductor-zh\/\*\* text eol=lf$/m,
   );
 });
 
