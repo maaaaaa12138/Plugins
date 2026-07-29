@@ -1,4 +1,4 @@
 interface:
-  display_name: "Agent Conductor ÖĞÎÄ×¨¼ÒÍÅ"
-  short_description: "¸ù¾İÈÎÎñÄ¿±ê×Ô¶¯Ñ¡Ôñ²¢Ğ­µ÷268¸öÖĞÎÄ×¨ÒµAgent"
-  default_prompt: "Çë¸ù¾İÎÒµÄÄ¿±ê×Ô¶¯Ñ¡ÔñºÏÊÊµÄÖĞÎÄ×¨¼Ò Agent£¬²¢·µ»Ø¾­¹ıÑéÖ¤µÄ½á¹û¡£"
+  display_name: "Agent Conductor ä¸­æ–‡ä¸“å®¶å›¢"
+  short_description: "æ ¹æ®ä»»åŠ¡ç›®æ ‡è‡ªåŠ¨é€‰æ‹©å¹¶åè°ƒ268ä¸ªä¸­æ–‡ä¸“ä¸šAgent"
+  default_prompt: "è¯·æ ¹æ®æˆ‘çš„ç›®æ ‡è‡ªåŠ¨é€‰æ‹©åˆé€‚çš„ä¸­æ–‡ä¸“å®¶ Agentï¼Œå¹¶è¿”å›ç»è¿‡éªŒè¯çš„ç»“æœã€‚"

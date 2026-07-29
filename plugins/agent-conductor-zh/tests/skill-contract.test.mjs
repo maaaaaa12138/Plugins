@@ -43,9 +43,15 @@ test("management skill documents conservative global and project operations", ()
 
 test("both skills include Codex display metadata", () => {
   for (const name of ["agent-conductor", "manage-expert-agents"]) {
-    const metadata = fs.readFileSync(
-      path.join(pluginRoot, "skills", name, "agents", "openai.yaml"),
-      "utf8",
+    const metadataFile = path.join(
+      pluginRoot,
+      "skills",
+      name,
+      "agents",
+      "openai.yaml",
+    );
+    const metadata = new TextDecoder("utf-8", { fatal: true }).decode(
+      fs.readFileSync(metadataFile),
     );
     assert.match(metadata, /^interface:/m);
     assert.match(metadata, /^  display_name: /m);
