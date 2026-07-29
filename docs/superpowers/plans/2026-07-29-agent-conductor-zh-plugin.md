@@ -1,5 +1,9 @@
 # Agent Conductor Chinese Expert Team Plugin Implementation Plan
 
+> Final repository location: `Agent Conductor/agent-conductor-zh`. References
+> below to `plugins/agent-conductor-zh` record the path used while this plan was
+> originally executed.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build, validate, privately publish, and locally install `agent-conductor-zh`, a Codex plugin that routes work to a bundled, managed snapshot of 268 Chinese specialist Agents.

@@ -27,8 +27,12 @@ test("plugin and marketplace expose agent-conductor-zh", () => {
     "Agent Conductor 中文专家团",
   );
   assert.equal(manifest.repository, "https://github.com/maaaaaa12138/Plugins");
+  assert.equal(
+    manifest.homepage,
+    "https://github.com/maaaaaa12138/Plugins/tree/main/Agent%20Conductor/agent-conductor-zh",
+  );
   assert.equal(manifest.skills, "./skills/");
-  assert.equal(entry.source.path, "./plugins/agent-conductor-zh");
+  assert.equal(entry.source.path, "./Agent Conductor/agent-conductor-zh");
   assert.deepEqual(entry.policy, {
     installation: "AVAILABLE",
     authentication: "ON_INSTALL",
@@ -44,7 +48,7 @@ test("plugin files keep LF endings so manifest hashes are stable", () => {
   const attributes = fs.readFileSync(path.join(repoRoot, ".gitattributes"), "utf8");
   assert.match(
     attributes,
-    /^plugins\/agent-conductor-zh\/\*\* text eol=lf$/m,
+    /^"Agent Conductor\/agent-conductor-zh\/\*\*" text eol=lf$/m,
   );
 });
 

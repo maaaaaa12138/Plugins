@@ -1,5 +1,8 @@
 # Agent Conductor Chinese Expert Team Plugin Design
 
+> Final repository location: `Agent Conductor/agent-conductor-zh`. References
+> below to `plugins/agent-conductor-zh` record the original implementation path.
+
 Date: 2026-07-29
 Status: Approved for implementation planning
 Repository: `maaaaaa12138/Plugins` (private)
