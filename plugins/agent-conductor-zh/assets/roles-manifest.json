@@ -1,0 +1,1890 @@
+{
+  "schemaVersion": 1,
+  "pluginVersion": "1.0.0",
+  "roleBundleVersion": "agency-agents-zh-2ecfabf8e944",
+  "generatedAt": "2026-07-28T08:40:19.647Z",
+  "upstream": {
+    "repository": "https://github.com/jnMetaCode/agency-agents-zh",
+    "revision": "2ecfabf8e944ccdfed63ad8c44d5241290af6977"
+  },
+  "roleCount": 268,
+  "roleBearingCategoryCount": 19,
+  "roles": [
+    {
+      "slug": "academic-anthropologist",
+      "category": "academic",
+      "path": "agents/academic-anthropologist.toml",
+      "sha256": "cd5c807fccee1e6a81964fa3e131853657a9ec7baf659c2f2a328c03cd2bfab2",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "academic-geographer",
+      "category": "academic",
+      "path": "agents/academic-geographer.toml",
+      "sha256": "9ff4db81b2ea92b69c2c43ddc54328b3f35187d4482f4cce9ef274787bb00bf6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "academic-historian",
+      "category": "academic",
+      "path": "agents/academic-historian.toml",
+      "sha256": "d8c469fb70641d11cd4e4eb097001c52c53915f5f915c05cecdfbbcf4361a3de",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "academic-narratologist",
+      "category": "academic",
+      "path": "agents/academic-narratologist.toml",
+      "sha256": "bd91fb63e2981b7fefc1264e04fc9cece1ad21e3cd4b93a051730f5e0c54efbd",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "academic-psychologist",
+      "category": "academic",
+      "path": "agents/academic-psychologist.toml",
+      "sha256": "356bf818629c12edfca14990f6352f32b6198bf0e15fa64b9ff63eca136689ad",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "academic-study-planner",
+      "category": "academic",
+      "path": "agents/academic-study-planner.toml",
+      "sha256": "d4a7a93209babca77fae88ced85682a9c94946f68ea3d6795af5ee436f880d8a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "accounts-payable-agent",
+      "category": "specialized",
+      "path": "agents/accounts-payable-agent.toml",
+      "sha256": "78e4d5736df7821c30812199aa3efb2dd09d24e64ba03a6e996ef8d4f217f831",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "agentic-identity-trust",
+      "category": "specialized",
+      "path": "agents/agentic-identity-trust.toml",
+      "sha256": "c850aaef049481d9e2d40a5751444342448f7bfedad605d49ea5910a8cd6b238",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "agents-orchestrator",
+      "category": "specialized",
+      "path": "agents/agents-orchestrator.toml",
+      "sha256": "34ff94c7e60c69e2959e1b510ee349fa928fe4503c80aee16e2ec6b6e0cf2d8f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "automation-governance-architect",
+      "category": "specialized",
+      "path": "agents/automation-governance-architect.toml",
+      "sha256": "e629986e262543f8db76f810ba58e25c7a251434ece9316868426b98cb15ec7b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "blender-addon-engineer",
+      "category": "game-development",
+      "path": "agents/blender-addon-engineer.toml",
+      "sha256": "9f8723cf970f5f2204cbeb4e9ff0645d6d3eee1eb36ae5ab9a9c6a663d3d481e",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "business-strategist",
+      "category": "specialized",
+      "path": "agents/business-strategist.toml",
+      "sha256": "386d28b791160138bc3c6474af51182f2cee7bd32bbfe475fd451bffb3efba94",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "change-management-consultant",
+      "category": "specialized",
+      "path": "agents/change-management-consultant.toml",
+      "sha256": "7eab3a2090b05c0257d39837cbbae1a75650d3b1bfd86701681eb5307327081e",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "chief-financial-officer",
+      "category": "specialized",
+      "path": "agents/chief-financial-officer.toml",
+      "sha256": "781441e2252cef82129f700af62f20dc79ebd31e84e36220ad1c70362ac845e9",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "corporate-training-designer",
+      "category": "specialized",
+      "path": "agents/corporate-training-designer.toml",
+      "sha256": "5e771c7c85dea12fa5e44bea7d70b19e7b519ef940c8ac37311c17a53a5278cc",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "customer-success-manager",
+      "category": "specialized",
+      "path": "agents/customer-success-manager.toml",
+      "sha256": "b4c7b8268c308da32ef3d374ddc6dd7ac87413161a26f4851bf2e80c720a385c",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "data-consolidation-agent",
+      "category": "specialized",
+      "path": "agents/data-consolidation-agent.toml",
+      "sha256": "49876cf1ceff02d8d3eee0baa4c81dfc7ae3a3966d6b698210a2a8d7bf0a60f2",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "data-privacy-officer",
+      "category": "specialized",
+      "path": "agents/data-privacy-officer.toml",
+      "sha256": "fcde402ea0bb9381b6912bdbd03927cad3013084a5ab709a530961fb8ea54382",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "design-brand-guardian",
+      "category": "design",
+      "path": "agents/design-brand-guardian.toml",
+      "sha256": "0fcf51f016ffbe24a6de48ab6000c3f49d0a99a8dcd973eafbf75cbabefb2bda",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "design-image-prompt-engineer",
+      "category": "design",
+      "path": "agents/design-image-prompt-engineer.toml",
+      "sha256": "1089566265738b97fe41206700e8a14f201deb9c0abcf9946b9f712c0ab5dfa7",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "design-inclusive-visuals-specialist",
+      "category": "design",
+      "path": "agents/design-inclusive-visuals-specialist.toml",
+      "sha256": "1a8c8c6325117e24d0790167884032c2d9ed15bb8ceb9254a8df832ce9b241af",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "design-persona-walkthrough",
+      "category": "design",
+      "path": "agents/design-persona-walkthrough.toml",
+      "sha256": "cb02e5a85346c8e3dccce64207b366c8a99c3413e8c7e1d838afa479ed0e11c3",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "design-ui-designer",
+      "category": "design",
+      "path": "agents/design-ui-designer.toml",
+      "sha256": "5a5b28c3112232c01ff287a2b47296a8a79751803a6dbfe3008d0cf77a92c411",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "design-ux-architect",
+      "category": "design",
+      "path": "agents/design-ux-architect.toml",
+      "sha256": "a6b2e3a679831f894d5f23a3085080898860b12d5f6568bac99a799c2eb0d231",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "design-ux-researcher",
+      "category": "design",
+      "path": "agents/design-ux-researcher.toml",
+      "sha256": "cfd97dbe2000abfe76cdf22720378eb9acded59ebec2449862fc2f5ebc0b9cd4",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "design-visual-storyteller",
+      "category": "design",
+      "path": "agents/design-visual-storyteller.toml",
+      "sha256": "cdc815a96b9994b42d2bc0c5662e58b55afdb96b35b7785253f0faad8c32b108",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "design-whimsy-injector",
+      "category": "design",
+      "path": "agents/design-whimsy-injector.toml",
+      "sha256": "7b91c7fb1c9d5694e90fcef0285069c08d457a6f7ab1cdad77d89f708736f04e",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-ai-data-remediation-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-ai-data-remediation-engineer.toml",
+      "sha256": "ef27d9c31f104607ab15627769b31dfe7b28ca143d12127c31f5dab6b7e11f54",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-ai-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-ai-engineer.toml",
+      "sha256": "c8eab9ac3efa961f4e625e0bc0023e95115397fcd6ab4388d9ee1c5b70d0bdec",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-autonomous-optimization-architect",
+      "category": "engineering",
+      "path": "agents/engineering-autonomous-optimization-architect.toml",
+      "sha256": "74a487bb698c1bb5e43b77c287602dc27f9f755c481c04060b04505d9452fa57",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-backend-architect",
+      "category": "engineering",
+      "path": "agents/engineering-backend-architect.toml",
+      "sha256": "2e9df3f44a5fa7756b42a724a335234fea2e5b1809b3eccc80b896ca5462f7d0",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-cms-developer",
+      "category": "engineering",
+      "path": "agents/engineering-cms-developer.toml",
+      "sha256": "5b136a5e20b356ea433068c10401b0493767e57abda55f7b6edff4c6724641a8",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-code-reviewer",
+      "category": "engineering",
+      "path": "agents/engineering-code-reviewer.toml",
+      "sha256": "eb92f36fcc310485b8c76b57cce2c5aa5413f2df31de83681e6fddd8c8ba0c83",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-codebase-onboarding-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-codebase-onboarding-engineer.toml",
+      "sha256": "6ae62b6a6517e87f8c58bffc36f9d4d989d4beb69ae75496b42d90b6750d8a82",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-data-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-data-engineer.toml",
+      "sha256": "6cac4289e977f53e94507e01bef6465ef9e7038e1a9813bb00ab0c822ad6c429",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-database-optimizer",
+      "category": "engineering",
+      "path": "agents/engineering-database-optimizer.toml",
+      "sha256": "9465f42b097ceb93dfe52118897ffd59a514f397aa2294bbd694e9f98a3db56a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-devops-automator",
+      "category": "engineering",
+      "path": "agents/engineering-devops-automator.toml",
+      "sha256": "d9a30670b81ddd93a4c6167ff9c8176e405b75a54d7daa43cd3c433a796f2cdd",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-dingtalk-integration-developer",
+      "category": "engineering",
+      "path": "agents/engineering-dingtalk-integration-developer.toml",
+      "sha256": "0fd3ceb1dd7ebbfdeba46b2920dc46063ad3d24f6a745ad49d2577c5e1b9a519",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-drupal-shopping-cart",
+      "category": "engineering",
+      "path": "agents/engineering-drupal-shopping-cart.toml",
+      "sha256": "6b86844fe39f3c4ebe2191ff5d93be0ee72ee4c56481167dd1605bc0297b0e92",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-email-intelligence-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-email-intelligence-engineer.toml",
+      "sha256": "9fd0b8a9ad043c6389d3bc065d376a50e9637529a4c6b794bdf1aa356f995e31",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-embedded-firmware-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-embedded-firmware-engineer.toml",
+      "sha256": "887dbdb2ed19ac71e0793464112d7d3ef69e491b5bade0e0e357e630d73f2af5",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-embedded-linux-driver-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-embedded-linux-driver-engineer.toml",
+      "sha256": "5257e0023c33f65ea54e179b1337f6851d845f6da8d37036a0ee0cd668ad024b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-feishu-integration-developer",
+      "category": "engineering",
+      "path": "agents/engineering-feishu-integration-developer.toml",
+      "sha256": "2aa06e1e8fbcf5e48a6cdfd93690730e4a347bec7e49a42efc3fd7a456778595",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-filament-optimization-specialist",
+      "category": "engineering",
+      "path": "agents/engineering-filament-optimization-specialist.toml",
+      "sha256": "ff6cd0debc4aa484a61bcbecb5c30f213d98244de85826e0f47fb1bcdc9b9727",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-fpga-digital-design-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-fpga-digital-design-engineer.toml",
+      "sha256": "b4730b5411f97dcc43c04405ef46b83b779679b46368172d119316994fd902b6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-frontend-developer",
+      "category": "engineering",
+      "path": "agents/engineering-frontend-developer.toml",
+      "sha256": "25aba866f2e8783fd1b5e307966599e06aab82443ef38dec6034b97a77fd14eb",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-git-workflow-master",
+      "category": "engineering",
+      "path": "agents/engineering-git-workflow-master.toml",
+      "sha256": "57559c013feb2be1ae9c0e0033663ca8cb841022bd9d21dfafc5787f9debbd3e",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-incident-response-commander",
+      "category": "engineering",
+      "path": "agents/engineering-incident-response-commander.toml",
+      "sha256": "e1b31ac2c2bd06dc873b2b23b0be0652b62794d12facd60bf8285655f5f4b9e0",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-iot-solution-architect",
+      "category": "engineering",
+      "path": "agents/engineering-iot-solution-architect.toml",
+      "sha256": "932096690d3db4458735192153b38e5524b5ce0ac41e2425590853079dc4e90a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-it-service-manager",
+      "category": "engineering",
+      "path": "agents/engineering-it-service-manager.toml",
+      "sha256": "15d24bb4565e4c30272213f2e1627a8cf87672bfe94211ed58dd44876e9b0fd6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-mechanical-design-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-mechanical-design-engineer.toml",
+      "sha256": "deab15b5361f3c680e5181a2b0da3fa403afaefa380651c6f004da16b3a3ca48",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-minimal-change-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-minimal-change-engineer.toml",
+      "sha256": "1d2a71dabeb7019d12f512f6129d35fbe9cbf6448ea2992ed845eabe323e669e",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-mobile-app-builder",
+      "category": "engineering",
+      "path": "agents/engineering-mobile-app-builder.toml",
+      "sha256": "3aa52c58305ada05258d478af9132a32e97fbd333195f516e3c1e4ecac94ef51",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-multi-agent-systems-architect",
+      "category": "engineering",
+      "path": "agents/engineering-multi-agent-systems-architect.toml",
+      "sha256": "62b4f6d8e0f3af114f168c4f0957e778f5cbb036d07fc275730ef0efca5b6dcf",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-network-engineer-china",
+      "category": "engineering",
+      "path": "agents/engineering-network-engineer-china.toml",
+      "sha256": "de213e61599e7f3b4b934ef1292554e1505a77084f2bd299f8b0471bc023cde2",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-orgscript-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-orgscript-engineer.toml",
+      "sha256": "b2a1a97cf131058b4f38ab0c0fc3d8636e600fe0a237b1329bb6a4fae36791f5",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-pc-host-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-pc-host-engineer.toml",
+      "sha256": "56facb4245e682c6618d6e91c641f15ca06b817063f9dac174d04e7e2226d0fd",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-prompt-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-prompt-engineer.toml",
+      "sha256": "6b55dbcfe3affbb874114d856a565cb8abfe5abd581ee0ae3a22e52575e40715",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-rapid-prototyper",
+      "category": "engineering",
+      "path": "agents/engineering-rapid-prototyper.toml",
+      "sha256": "2c4e088953161a462010b3e07a9d3baf6af20e18499a23476943cca401a5eb98",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-security-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-security-engineer.toml",
+      "sha256": "25bfbfcd6a3edd054d9ab65159abbeeb44932373e6418792d061a701ce138378",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-senior-developer",
+      "category": "engineering",
+      "path": "agents/engineering-senior-developer.toml",
+      "sha256": "cb5dd33ccd8fb698c202724e44ba48bf24123ea50a3308c179a39ecda4f98ee3",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-software-architect",
+      "category": "engineering",
+      "path": "agents/engineering-software-architect.toml",
+      "sha256": "41775e8399fee9be722ab0548aba8ad80b2ae786ffe86847dd137aad4745d0f6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-solidity-smart-contract-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-solidity-smart-contract-engineer.toml",
+      "sha256": "e3b50f90cc29ebb7c4405de034cb67366589b0e37a1299d344cbbd4f672935c5",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-sre",
+      "category": "engineering",
+      "path": "agents/engineering-sre.toml",
+      "sha256": "cef5ea245c0323982c6ae07f5eaa3822d4127318681c83ef0e5769fa6780ebbd",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-technical-writer",
+      "category": "engineering",
+      "path": "agents/engineering-technical-writer.toml",
+      "sha256": "21f4b9d95899703a56203c1b52c689c45ead8936c49c30726ba712375080eaec",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-threat-detection-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-threat-detection-engineer.toml",
+      "sha256": "df3a17ee01fab493f0e40d1b520aac47d1a3160cb108f7cec5eb9390a478c998",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-voice-ai-integration-engineer",
+      "category": "engineering",
+      "path": "agents/engineering-voice-ai-integration-engineer.toml",
+      "sha256": "38bc699779402d4378167436dee3e8746885c4b3274be4dc9edc14396f7f674f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-wechat-mini-program-developer",
+      "category": "engineering",
+      "path": "agents/engineering-wechat-mini-program-developer.toml",
+      "sha256": "05898004894beb8dded87d8208ababe870366206a32c185df6f0d259efc97c69",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "engineering-wordpress-shopping-cart",
+      "category": "engineering",
+      "path": "agents/engineering-wordpress-shopping-cart.toml",
+      "sha256": "89d0d73d7df3d1fd833d94a219e2fe16422d64a91e9792430f049753b510ab8f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "esg-sustainability-officer",
+      "category": "specialized",
+      "path": "agents/esg-sustainability-officer.toml",
+      "sha256": "a3dd2709fc673da3b68c89bcd4225f07ca73e8a5bed51f4e72e103c4c6490826",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "finance-bookkeeper-controller",
+      "category": "finance",
+      "path": "agents/finance-bookkeeper-controller.toml",
+      "sha256": "80ebeab52afe6ae4f54e41c36a195a57d4adb701492b8a2f6581b527cd4f35bc",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "finance-financial-analyst",
+      "category": "finance",
+      "path": "agents/finance-financial-analyst.toml",
+      "sha256": "25d46c535614e99c42b615f26f6f6d6a677dc642ef2e775b53d3d5f042f85dad",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "finance-financial-forecaster",
+      "category": "finance",
+      "path": "agents/finance-financial-forecaster.toml",
+      "sha256": "9b82bcb8e38895dc553af95cb01e6e7df9bdabbcd95ac84d6dce18430268dd54",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "finance-fpa-analyst",
+      "category": "finance",
+      "path": "agents/finance-fpa-analyst.toml",
+      "sha256": "df00fce76c7891e907f2d12ede49f68238b5fed6aeb06b458edf492382cb8b5c",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "finance-fraud-detector",
+      "category": "finance",
+      "path": "agents/finance-fraud-detector.toml",
+      "sha256": "eb4a2e13e70f97622b2c3527d74717a6f0924659bb983b0ada3ea96333a8c7be",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "finance-hk-stock-compliance-reviewer",
+      "category": "finance",
+      "path": "agents/finance-hk-stock-compliance-reviewer.toml",
+      "sha256": "ef92a5d2749de894abb7679aad68a3c78507f80a39d26c33c36cefdedfc62b53",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "finance-investment-researcher",
+      "category": "finance",
+      "path": "agents/finance-investment-researcher.toml",
+      "sha256": "d90955b8b7893176d10cd756fc3cafdfff8e0a3e8ec80e18f4b19c94af2902d8",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "finance-invoice-manager",
+      "category": "finance",
+      "path": "agents/finance-invoice-manager.toml",
+      "sha256": "eeefc7963f23638e990eeac4bb98339b51e96756b8f073ff3f3d0243d108c675",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "finance-tax-strategist",
+      "category": "finance",
+      "path": "agents/finance-tax-strategist.toml",
+      "sha256": "29ec12249ae390942a044a9db4acfcbb85ffb5a930ead7216ac5fec6be247b2d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "game-audio-engineer",
+      "category": "game-development",
+      "path": "agents/game-audio-engineer.toml",
+      "sha256": "475bb6b3f7d16f17a96e452f04412f4086ec72e2a5e6ac466fe3d3ef8dc5c905",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "game-designer",
+      "category": "game-development",
+      "path": "agents/game-designer.toml",
+      "sha256": "4ad546b5d85939aecb0dd43862c8c109cd87ef58d7d3618d65e18775ea5c8f92",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gaokao-college-advisor",
+      "category": "specialized",
+      "path": "agents/gaokao-college-advisor.toml",
+      "sha256": "281001e793f62c71c94653f1a73ef4c8ff07ce8008de63e8b52d163099853562",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-3d-scene-developer",
+      "category": "gis",
+      "path": "agents/gis-3d-scene-developer.toml",
+      "sha256": "100233b9b008c9db7bcd1d6468b8970e6969d762b269a16897688a3d5521716d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-analyst",
+      "category": "gis",
+      "path": "agents/gis-analyst.toml",
+      "sha256": "02c7f4d7cb17187679f525ab8b3bb02ebf64540c85a988f895035d5443845231",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-bim-specialist",
+      "category": "gis",
+      "path": "agents/gis-bim-specialist.toml",
+      "sha256": "8d134b952a84c64a02f81f35ec6d0c24846637dddd3617c17bccbf59ff350f54",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-cartography-designer",
+      "category": "gis",
+      "path": "agents/gis-cartography-designer.toml",
+      "sha256": "dd5217c962b532c7d358f65f7334e3eece0e8dcdc2725329106da31cc40a5b9d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-drone-reality-mapping",
+      "category": "gis",
+      "path": "agents/gis-drone-reality-mapping.toml",
+      "sha256": "6970a39575d473748f90bdf5b5e9c7e6cd49a8b091b83ced9ef3c7e2634747b9",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-geoai-ml-engineer",
+      "category": "gis",
+      "path": "agents/gis-geoai-ml-engineer.toml",
+      "sha256": "190e6ec8fcc8b833b48cf51294465ab6a2b49f671cbad343d0a6d8092b414029",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-geoprocessing-specialist",
+      "category": "gis",
+      "path": "agents/gis-geoprocessing-specialist.toml",
+      "sha256": "cb1c0c57f74db523f869ba8936798ee22977d99ace634ec4be09c6d1c40f7a92",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-qa-engineer",
+      "category": "gis",
+      "path": "agents/gis-qa-engineer.toml",
+      "sha256": "261deaffe8cf442ffe640a03d520e0bb6fbfa4252481a220ee52288ae517b2df",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-solution-engineer",
+      "category": "gis",
+      "path": "agents/gis-solution-engineer.toml",
+      "sha256": "93ceae4ab8ef51800b62f04d52ab3e614d694629c44449127877f9a1e3c957e0",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-spatial-data-engineer",
+      "category": "gis",
+      "path": "agents/gis-spatial-data-engineer.toml",
+      "sha256": "c783b5f70f010203b4466017e921fa98fc71d3640c892ec83fe45609501915a0",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-spatial-data-scientist",
+      "category": "gis",
+      "path": "agents/gis-spatial-data-scientist.toml",
+      "sha256": "093dd81c85a7cdd49d63e8d5fe82e3d88f212050dd8afc5967d60c829118f2bb",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-technical-consultant",
+      "category": "gis",
+      "path": "agents/gis-technical-consultant.toml",
+      "sha256": "5aba559dc2f59dc92f4f20026b66531952bf692933c5982dc7432d54e808f088",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "gis-web-gis-developer",
+      "category": "gis",
+      "path": "agents/gis-web-gis-developer.toml",
+      "sha256": "7c1ad45ec1574ef30c96da4d1e099e155110a528868e9b62c4fc01c29390c98a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "godot-gameplay-scripter",
+      "category": "game-development",
+      "path": "agents/godot-gameplay-scripter.toml",
+      "sha256": "4e7059f9fbda4ae9eee8063645c021f409aaf1c0a59fea8594b52684fdbc6e31",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "godot-multiplayer-engineer",
+      "category": "game-development",
+      "path": "agents/godot-multiplayer-engineer.toml",
+      "sha256": "3695008111352a246509c90d2f8e45e79f6d3a2f823d4e31d6da26ddfa13630d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "godot-shader-developer",
+      "category": "game-development",
+      "path": "agents/godot-shader-developer.toml",
+      "sha256": "7f6b3cc4e947d705091186f3630bf3d069effc3be9718190c51a37a2f5e9854b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "government-digital-presales-consultant",
+      "category": "specialized",
+      "path": "agents/government-digital-presales-consultant.toml",
+      "sha256": "3e5965265f5b0299e7d2a076db456d1fedb37ff235d63c3926c80d3ff8cd6f9a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "grant-writer",
+      "category": "specialized",
+      "path": "agents/grant-writer.toml",
+      "sha256": "8e8d8d04a3195117e09480674b42710bb9ab4d471622121069170b3851a50318",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "healthcare-customer-service",
+      "category": "specialized",
+      "path": "agents/healthcare-customer-service.toml",
+      "sha256": "0aa2558422bf15fcce23e1f09294ee3e2526d1d233234e40cb86b4b3e4dea236",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "healthcare-marketing-compliance",
+      "category": "specialized",
+      "path": "agents/healthcare-marketing-compliance.toml",
+      "sha256": "9e923be796b7047391ac48297ed48809b0a1a7e646f3d08dd5f65bfaee494bd1",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "hospitality-guest-services",
+      "category": "specialized",
+      "path": "agents/hospitality-guest-services.toml",
+      "sha256": "e3e8dc6368a86c1c6c8072760577d1ac7ec5c05f6d24fe40e1e844a9ee2a0103",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "hr-onboarding",
+      "category": "specialized",
+      "path": "agents/hr-onboarding.toml",
+      "sha256": "c36d81393aee80554fc58d7e65930cf5630f5f7bc0d0557112a29a641af6c0c9",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "hr-performance-reviewer",
+      "category": "hr",
+      "path": "agents/hr-performance-reviewer.toml",
+      "sha256": "3a6d3c4b27480bf572154081a4d72bb79bf57ab7eb75bc15a56bdd4d6cac6222",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "hr-recruiter",
+      "category": "hr",
+      "path": "agents/hr-recruiter.toml",
+      "sha256": "2c7fb36e7818f8b96481d77f17d0379da9de7a089ca4bac8f52471f6d549f354",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "identity-graph-operator",
+      "category": "specialized",
+      "path": "agents/identity-graph-operator.toml",
+      "sha256": "2bfece6b13522ed438002e406286aefb98ce8bd212647ac7fa8d21e8afaaffb4",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "language-translator",
+      "category": "specialized",
+      "path": "agents/language-translator.toml",
+      "sha256": "7095d338f90f3fb0c28e6bf3f0362bea5370e4e059e8cd7ceab8c5322cc33a62",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "legal-billing-time-tracking",
+      "category": "specialized",
+      "path": "agents/legal-billing-time-tracking.toml",
+      "sha256": "042a53aa7b338c8a27abb2250d142c3ce7e6968e0b25dfafbd672e6cff597c57",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "legal-client-intake",
+      "category": "specialized",
+      "path": "agents/legal-client-intake.toml",
+      "sha256": "776de53de20c6041f94c72afd3a28795864272c08f4ac5d8945b5998af5b3397",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "legal-contract-reviewer",
+      "category": "legal",
+      "path": "agents/legal-contract-reviewer.toml",
+      "sha256": "6586bf97abede998ef7ac87d730ac29b8cc7b68d2f96a9a658815557f5cddac8",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "legal-document-review",
+      "category": "specialized",
+      "path": "agents/legal-document-review.toml",
+      "sha256": "02b68fa32d361e8ab258263978660b0568ef9f9908e5691e87f0d6015c0c5a6a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "legal-policy-writer",
+      "category": "legal",
+      "path": "agents/legal-policy-writer.toml",
+      "sha256": "9b8e0f40445fdeaae1cae6c4ac2f68a5ad765c441475720a5f03db2745b05e33",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "level-designer",
+      "category": "game-development",
+      "path": "agents/level-designer.toml",
+      "sha256": "5e2bf51124da2061adeeb001b983c0218c59445049d103df5b3e3034ef59113d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "livestock-archive-auditor",
+      "category": "specialized",
+      "path": "agents/livestock-archive-auditor.toml",
+      "sha256": "a2fdaeb44fbf3a4d99f6fa0405e5678f1a6f9193f4f344e25276190b53ae6340",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "loan-officer-assistant",
+      "category": "specialized",
+      "path": "agents/loan-officer-assistant.toml",
+      "sha256": "26cd55b6e33498c1db703afffef49748cb07a9841df1c79a8f210a3ab6b3d913",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "lsp-index-engineer",
+      "category": "specialized",
+      "path": "agents/lsp-index-engineer.toml",
+      "sha256": "66aa1f09b4107a2252564ae26eaaf67ad93ea583de61cd7ff7ca71e92e439ed6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "ma-integration-manager",
+      "category": "specialized",
+      "path": "agents/ma-integration-manager.toml",
+      "sha256": "4bfe27b6de786aac85cc3878f617e550d451d74589b5a1b81bedd943f663c9be",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "macos-spatial-metal-engineer",
+      "category": "spatial-computing",
+      "path": "agents/macos-spatial-metal-engineer.toml",
+      "sha256": "6b84ef9a2f6d13238ca43d30fd94a6b3734faf59348f5951488727ae4aa37cf8",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-aeo-foundations",
+      "category": "marketing",
+      "path": "agents/marketing-aeo-foundations.toml",
+      "sha256": "218662f0ed8a859da1324c1b219fae1d14e372c5e54df943534754f1434398f5",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-agentic-search-optimizer",
+      "category": "marketing",
+      "path": "agents/marketing-agentic-search-optimizer.toml",
+      "sha256": "2a95309a1069741a75ba25ef8226746d96cfe75c67117253fbfd863418cd1593",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-ai-citation-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-ai-citation-strategist.toml",
+      "sha256": "0dd1f0dba06af2f5eaf99232489da78626c931c8d1adf369094bc2072606db46",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-app-store-optimizer",
+      "category": "marketing",
+      "path": "agents/marketing-app-store-optimizer.toml",
+      "sha256": "8a806ea37ecb65caa1481ba9a7593e2232862144cd3497551664f78ee248ffd2",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-baidu-seo-specialist",
+      "category": "marketing",
+      "path": "agents/marketing-baidu-seo-specialist.toml",
+      "sha256": "4f912ed7c165e5c160370f1d51354f8b42d42f07a5e07eff7e45e8824dc4b4bb",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-bilibili-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-bilibili-strategist.toml",
+      "sha256": "4bc8cd5de7632c503880d8b4cd78ff8817ac6088dadb11d208f01a6be8dcf994",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-book-co-author",
+      "category": "marketing",
+      "path": "agents/marketing-book-co-author.toml",
+      "sha256": "e64e8dc3519cf8e62edbe604921dc83a51652c99a96d2d985876e97d1218663d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-carousel-growth-engine",
+      "category": "marketing",
+      "path": "agents/marketing-carousel-growth-engine.toml",
+      "sha256": "79387140e38371f1e7d66fc57e0e28aedcf098ad69e0dda06006a1afc8063304",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-china-ecommerce-operator",
+      "category": "marketing",
+      "path": "agents/marketing-china-ecommerce-operator.toml",
+      "sha256": "325bced007652fec0e0a0ffcab714888f693d182f75e79b316b697d009c066f1",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-china-market-localization-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-china-market-localization-strategist.toml",
+      "sha256": "7971b6c2fa4617dc28e10cab086f7547fee65b880660bab79f5eb5607d6f1af3",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-content-creator",
+      "category": "marketing",
+      "path": "agents/marketing-content-creator.toml",
+      "sha256": "935c803e2841216fb3cd07cb9011ae55ba055aa5334072c37764eb707c97761e",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-cross-border-ecommerce",
+      "category": "marketing",
+      "path": "agents/marketing-cross-border-ecommerce.toml",
+      "sha256": "a7d501d19dbcda4188e813121d4b4a3d574849e55a055f9efb639b1505c4e247",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-daily-news-briefing",
+      "category": "marketing",
+      "path": "agents/marketing-daily-news-briefing.toml",
+      "sha256": "c7783c06db652432422f3d6ce6e939b023592c95d9370464dc6ceb75ba03d328",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-douyin-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-douyin-strategist.toml",
+      "sha256": "d6767f7a6153c5c9fadc0b08993903796770da66a2bd4db2466fedddbc37e4de",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-ecommerce-operator",
+      "category": "marketing",
+      "path": "agents/marketing-ecommerce-operator.toml",
+      "sha256": "d55ba5212fb13a9c894b6a494ab9a6bab23e9b22ab7f70188674801820c7ebba",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-email-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-email-strategist.toml",
+      "sha256": "3a06a782e72dd00090f6b66ecfa8bfa842ac57167bf3cd0d3a4f1095bf62727f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-global-podcast-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-global-podcast-strategist.toml",
+      "sha256": "bf8a3854a4bf9ef20fd4afdb6d3bf32bbe3150868c5d6dae6935c1862a383058",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-growth-hacker",
+      "category": "marketing",
+      "path": "agents/marketing-growth-hacker.toml",
+      "sha256": "fa4f7a1b969322f165ee190061874e0a72975c9f7f44d112565533d7778e1f88",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-instagram-curator",
+      "category": "marketing",
+      "path": "agents/marketing-instagram-curator.toml",
+      "sha256": "b06b1312f796d324bc2a9fb7ffeca5fa80cefe0b8fea273fafcf1387ffa440ca",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-knowledge-commerce-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-knowledge-commerce-strategist.toml",
+      "sha256": "2c63ca56ff530ce2ea9096281c39dde1fcb98455129def824759fd0ad8665712",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-kuaishou-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-kuaishou-strategist.toml",
+      "sha256": "3bb469314d0a70cc31c2aa098de0514367572e665981bbcb4e77d320c4acfce6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-linkedin-content-creator",
+      "category": "marketing",
+      "path": "agents/marketing-linkedin-content-creator.toml",
+      "sha256": "8feea7e59c0a2fa9a3b50afbcd086d0f198538cdafadc0e07c168afa9ec93511",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-livestream-commerce-coach",
+      "category": "marketing",
+      "path": "agents/marketing-livestream-commerce-coach.toml",
+      "sha256": "99e8389a00e9589264557f3b7fd02f7dbbdfc0ae0425449cca40b674940eb86d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-multi-platform-publisher",
+      "category": "marketing",
+      "path": "agents/marketing-multi-platform-publisher.toml",
+      "sha256": "02db216ff356073a1c6e7aa1a21cf754d0a384deb4169968f0792899246e4597",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-podcast-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-podcast-strategist.toml",
+      "sha256": "f7ab6ca473c6c9f8ddd429f524ef64aac9eef2c019259c3e0b3e49193375e8a9",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-pr-communications-manager",
+      "category": "marketing",
+      "path": "agents/marketing-pr-communications-manager.toml",
+      "sha256": "c56c9dae8f3e1e7b79802f6f3ce544b39556a4b9f9a8e40c48f124fa1a88f369",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-private-domain-operator",
+      "category": "marketing",
+      "path": "agents/marketing-private-domain-operator.toml",
+      "sha256": "2e4619b15b890e2ee27fdd02fa3108dd6ea391f0c71b13057805390d59c67719",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-reddit-community-builder",
+      "category": "marketing",
+      "path": "agents/marketing-reddit-community-builder.toml",
+      "sha256": "bdc7ee702d4d854de18066d833aab612a10dea1c2ed26a71a5e26a52246e1bc6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-seo-specialist",
+      "category": "marketing",
+      "path": "agents/marketing-seo-specialist.toml",
+      "sha256": "b59d763b26041281cbb3b561634f7ac19c3011f98edd4337f14726ce8c703610",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-short-video-editing-coach",
+      "category": "marketing",
+      "path": "agents/marketing-short-video-editing-coach.toml",
+      "sha256": "4f03e1a59458e773fdf99d6cbbe2986d6e63372e213e91efcb1ba623d3cef60c",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-social-media-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-social-media-strategist.toml",
+      "sha256": "c14d98094b0f24ea5c377486b1e5c1f3e66fd64286dcf10c339d021406561b59",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-tiktok-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-tiktok-strategist.toml",
+      "sha256": "9d91e5e94a8b8e2d3efadd407d799538b13ec751049849868a2d0556c191450b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-twitter-engager",
+      "category": "marketing",
+      "path": "agents/marketing-twitter-engager.toml",
+      "sha256": "c398dde60033cd45ed5337d3fa064fa0f1e6408e9292f7d396d136ddc0b2d60a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-video-optimization-specialist",
+      "category": "marketing",
+      "path": "agents/marketing-video-optimization-specialist.toml",
+      "sha256": "b4e811c7f484991707f77784572da55ecdca091429e7f55489a9ef0db6cc35f4",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-wechat-official-account",
+      "category": "marketing",
+      "path": "agents/marketing-wechat-official-account.toml",
+      "sha256": "2b3936d70d6c03f4ac10d612fec45759c7ac561bf8720dc15d1475f8a82ecbee",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-wechat-operator",
+      "category": "marketing",
+      "path": "agents/marketing-wechat-operator.toml",
+      "sha256": "b80688af7a55f1e31f359b1080314e29aff0f2ec10e9d944aecfd2457c30f4bc",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-weibo-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-weibo-strategist.toml",
+      "sha256": "083eae24e4df272dfb6e24cc7f29fd6571f387321fc9571ac008af46428a422f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-weixin-channels-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-weixin-channels-strategist.toml",
+      "sha256": "3a7f4e5eaaeeb75a547f2df0bcadd80bc2b3ac7e3e8d8bacb455de5946f566b9",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-x-twitter-intelligence-analyst",
+      "category": "marketing",
+      "path": "agents/marketing-x-twitter-intelligence-analyst.toml",
+      "sha256": "d1db219f90c7d770e22a27a25c53547e87c00ae6f19421a41933508c0370645f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-xiaohongshu-operator",
+      "category": "marketing",
+      "path": "agents/marketing-xiaohongshu-operator.toml",
+      "sha256": "85e208207d3c38b94b9b8c5c6001737ecc2b1d18924d8f93a07c0c573bf9464b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-xiaohongshu-specialist",
+      "category": "marketing",
+      "path": "agents/marketing-xiaohongshu-specialist.toml",
+      "sha256": "c5c816bca242bcd4562b329bb0da243b4f18dad9731d58908afc40e70abe26e3",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "marketing-zhihu-strategist",
+      "category": "marketing",
+      "path": "agents/marketing-zhihu-strategist.toml",
+      "sha256": "a8cd7d2987347cd72009f6a68bb85985c9b6b72a9ef7b1e9d9499abd20b01872",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "medical-billing-coding-specialist",
+      "category": "specialized",
+      "path": "agents/medical-billing-coding-specialist.toml",
+      "sha256": "6b013d46a1de95b5708201764d6ec2877ce154fb1cc850da5815f8fbdb22fb4a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "narrative-designer",
+      "category": "game-development",
+      "path": "agents/narrative-designer.toml",
+      "sha256": "2ad091602c03d555394f158af820d664890486b50bf604bb3051752f1af663ea",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "operations-manager",
+      "category": "specialized",
+      "path": "agents/operations-manager.toml",
+      "sha256": "53e96733cf0dc0161ab703ffb19b0d2dd0f2724797d46aa0b89e2fa2dac3c637",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "organizational-psychologist",
+      "category": "specialized",
+      "path": "agents/organizational-psychologist.toml",
+      "sha256": "668c87218d2d6a91ffa766f4ebb9c9cda37422ea5993cecdba053a09c9a139b8",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "paid-media-auditor",
+      "category": "paid-media",
+      "path": "agents/paid-media-auditor.toml",
+      "sha256": "b4bfc63f9eaff3bb5d74c3de6e2893c0224ccf6fe7230ddfcee6cb53b2c1e416",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "paid-media-creative-strategist",
+      "category": "paid-media",
+      "path": "agents/paid-media-creative-strategist.toml",
+      "sha256": "a1959377566c8963c9e19480feb60d59fb0d47e201f63af99515305d60e4fa1d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "paid-media-paid-social-strategist",
+      "category": "paid-media",
+      "path": "agents/paid-media-paid-social-strategist.toml",
+      "sha256": "9e5de3534934a0ed8c015be9822ca3a27e0b972b70934242e90b6ca3d2dbc69f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "paid-media-ppc-strategist",
+      "category": "paid-media",
+      "path": "agents/paid-media-ppc-strategist.toml",
+      "sha256": "279d17f423abe7a5935df48f65d7328537d1da4ae31151e3a1a6b7e77b538ee5",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "paid-media-programmatic-buyer",
+      "category": "paid-media",
+      "path": "agents/paid-media-programmatic-buyer.toml",
+      "sha256": "e3dc7be0f7e17c1e50c01e0ea1eb04fa6607b78d63f5a0390e8c6274c9554492",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "paid-media-search-query-analyst",
+      "category": "paid-media",
+      "path": "agents/paid-media-search-query-analyst.toml",
+      "sha256": "5e5be4a01fbb4f9ac43b292fd86044b311a897be6871a564589fd103db30b568",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "paid-media-tracking-specialist",
+      "category": "paid-media",
+      "path": "agents/paid-media-tracking-specialist.toml",
+      "sha256": "753f6f88c8678b1494663bed87c844bbdcc0057713c2bcaa14f39a6291051315",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "personal-growth-mentor",
+      "category": "specialized",
+      "path": "agents/personal-growth-mentor.toml",
+      "sha256": "a390461481f57cd4ede05d666a9ccdea2aef2fa7820c7daac227aaa163f11d1b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "product-behavioral-nudge-engine",
+      "category": "product",
+      "path": "agents/product-behavioral-nudge-engine.toml",
+      "sha256": "b1920b3f6458eaacf783bcc669cb3b578397a57b35d53a1d684676724a7c815a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "product-feedback-synthesizer",
+      "category": "product",
+      "path": "agents/product-feedback-synthesizer.toml",
+      "sha256": "90d3f095bf011e972d68447f0dfa232657f122537d029c3ba535c60f333daf33",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "product-manager",
+      "category": "product",
+      "path": "agents/product-manager.toml",
+      "sha256": "186906868287a1d32eca266ee64d4e46078e5710aba1af06f668ad1b11c3a19c",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "product-sprint-prioritizer",
+      "category": "product",
+      "path": "agents/product-sprint-prioritizer.toml",
+      "sha256": "a4a3120df2a0d5efc6ca303a52167989363722153ebadf6661325c36192a40da",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "product-trend-researcher",
+      "category": "product",
+      "path": "agents/product-trend-researcher.toml",
+      "sha256": "5c0d03c20ed8ad82f35113e3be01b25e4bbb45189414c797468b24cdad6e434a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "project-management-experiment-tracker",
+      "category": "project-management",
+      "path": "agents/project-management-experiment-tracker.toml",
+      "sha256": "b1afb8cb2ec809393fe8ea702657b90e418eeec047759ae464df724ea8a76f38",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "project-management-jira-workflow-steward",
+      "category": "project-management",
+      "path": "agents/project-management-jira-workflow-steward.toml",
+      "sha256": "45498a556275d0ae53ae9708d5c819dbd864cb05ff1d61de4bdfae41491b6e4e",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "project-management-meeting-notes-specialist",
+      "category": "project-management",
+      "path": "agents/project-management-meeting-notes-specialist.toml",
+      "sha256": "5ff3897c32adc931ea1917fa4ff420a083102993cb5f1f5e838884557d88cda0",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "project-management-project-shepherd",
+      "category": "project-management",
+      "path": "agents/project-management-project-shepherd.toml",
+      "sha256": "3f8ba51a3d9f3155e2657a2d7e29fde117d00e973dfcbe1319836d907298a4d2",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "project-management-studio-operations",
+      "category": "project-management",
+      "path": "agents/project-management-studio-operations.toml",
+      "sha256": "2024ba8672603452d291aeec768050baa34da03b1faaf1e06c05a68f3cfc9927",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "project-management-studio-producer",
+      "category": "project-management",
+      "path": "agents/project-management-studio-producer.toml",
+      "sha256": "5b654f8ea3fde7743bb4c74170fa671f5eef92f7a2084b64a2268cbf3b56b3e6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "project-manager-senior",
+      "category": "project-management",
+      "path": "agents/project-manager-senior.toml",
+      "sha256": "ca4d2b00dd6e733e2ca19a6ee3a18e5566585bee18757f72aef714beefa0393f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "prompt-engineer",
+      "category": "specialized",
+      "path": "agents/prompt-engineer.toml",
+      "sha256": "464e55c4e64a84dad198a534000710383678ac27faf8055790e165a9dd89d54c",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "real-estate-buyer-seller",
+      "category": "specialized",
+      "path": "agents/real-estate-buyer-seller.toml",
+      "sha256": "ca1d42707e957a433ccf2f73e248a06ed829779c497f8979ce63111ebc1c3d35",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "recruitment-specialist",
+      "category": "specialized",
+      "path": "agents/recruitment-specialist.toml",
+      "sha256": "ba1674b26a3bd194233e71f7cdd2c67a48b3debc650f5fe1f962dc4c05fe0f9b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "report-distribution-agent",
+      "category": "specialized",
+      "path": "agents/report-distribution-agent.toml",
+      "sha256": "7e65864cce7a9130bea8357a607ade2214f7489c4e8fc40cf99a6f6639966be7",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "retail-customer-returns",
+      "category": "specialized",
+      "path": "agents/retail-customer-returns.toml",
+      "sha256": "dc28221148f663344f63a6f778f9380fb8e4cb415edfeaee0c99cf1e879406e8",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "roblox-avatar-creator",
+      "category": "game-development",
+      "path": "agents/roblox-avatar-creator.toml",
+      "sha256": "a3338659ac4477899b737d6adfe02da076cdaf6265475eb5ce73b60a4c88c997",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "roblox-experience-designer",
+      "category": "game-development",
+      "path": "agents/roblox-experience-designer.toml",
+      "sha256": "75a905e87d044da92527a5f011489418fad167d19a33cc841961d6536f458c0f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "roblox-systems-scripter",
+      "category": "game-development",
+      "path": "agents/roblox-systems-scripter.toml",
+      "sha256": "3fa58b02fb52fe5b6db7668ab1bc8a961c9b76ea400ef3f68527a605b6429811",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-account-strategist",
+      "category": "sales",
+      "path": "agents/sales-account-strategist.toml",
+      "sha256": "bd0f2a89148b86c81f3a4626d1370234f81ea15c7b4e98b71b6e429a0069c565",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-coach",
+      "category": "sales",
+      "path": "agents/sales-coach.toml",
+      "sha256": "75b2eae6099f9a1635c60c7de2d7e3ecd4ce3bf6ba5afda3494bc9637b60bd65",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-data-extraction-agent",
+      "category": "specialized",
+      "path": "agents/sales-data-extraction-agent.toml",
+      "sha256": "eb733ab6c575f4a3ddb04bf7ec60ed78a1e6b455ae1c28ba8d60f21be4a0377c",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-deal-strategist",
+      "category": "sales",
+      "path": "agents/sales-deal-strategist.toml",
+      "sha256": "8ce9536f0805d76aa299cea29181a77a12157d7211a811b0e010fbe92184a7d4",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-discovery-coach",
+      "category": "sales",
+      "path": "agents/sales-discovery-coach.toml",
+      "sha256": "b268b344b5ccc2486793743d3ccff5a9850ed0cf5521aa1ab780489e549c9108",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-engineer",
+      "category": "sales",
+      "path": "agents/sales-engineer.toml",
+      "sha256": "9cbc4494ed06ec0daa014c1b998a12891768e8e5977adcd77be36e911548c672",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-offer-lead-gen-strategist",
+      "category": "sales",
+      "path": "agents/sales-offer-lead-gen-strategist.toml",
+      "sha256": "d01b00c69d146beaaa724418c00252350d101eb5353e3f974a1b5f13d849bfbd",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-outbound-strategist",
+      "category": "sales",
+      "path": "agents/sales-outbound-strategist.toml",
+      "sha256": "a9483d474f5a6d1b1b37467229ea34611500b9afc2d517f69dae77079b9ec3cf",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-pipeline-analyst",
+      "category": "sales",
+      "path": "agents/sales-pipeline-analyst.toml",
+      "sha256": "d8e4e21aed4846ca6da197d528e4dd7135f4c3746f5519154c87f43f51f751d3",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "sales-proposal-strategist",
+      "category": "sales",
+      "path": "agents/sales-proposal-strategist.toml",
+      "sha256": "b9243816e05ab8728ee22a89997920f7f93bc59684d103d497da744d4c8866e8",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-appsec-engineer",
+      "category": "security",
+      "path": "agents/security-appsec-engineer.toml",
+      "sha256": "3a104ef5038931b874c8fc60b7e06fedf1dc773d46dea84dfd176cbd90760678",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-architect",
+      "category": "security",
+      "path": "agents/security-architect.toml",
+      "sha256": "73c6dcf97960d368bba9dd93fc3ac833160fc53a062e67cb746d54ebe7ecb866",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-blockchain-security-auditor",
+      "category": "security",
+      "path": "agents/security-blockchain-security-auditor.toml",
+      "sha256": "79acc2a424e003d836187e4fa58236a2a61df61e93c020e1c411697b50dca675",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-cloud-security-architect",
+      "category": "security",
+      "path": "agents/security-cloud-security-architect.toml",
+      "sha256": "b61b5d69ba3cac9484fcc2a3134d4377565377822fc17dd6789d26ae983649f1",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-compliance-auditor",
+      "category": "security",
+      "path": "agents/security-compliance-auditor.toml",
+      "sha256": "1e44b99d342d474a3d7961e6c22daba87451fe56cf19c3e4702995a8bdb1a904",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-incident-responder",
+      "category": "security",
+      "path": "agents/security-incident-responder.toml",
+      "sha256": "944e3ca65b2656bcf58d2b373b8a40848a17dc0b71d1f3049495dfddcf9321f2",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-penetration-tester",
+      "category": "security",
+      "path": "agents/security-penetration-tester.toml",
+      "sha256": "d684a2dec5d07fa6d4587d3a1b52c34f47ec019684893fe08ba01769aa0e599a",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-senior-secops",
+      "category": "security",
+      "path": "agents/security-senior-secops.toml",
+      "sha256": "87bf3eb580006fd0872fd41b68a8077ec1b4c770b033e150a2e416a4a45b69ef",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-threat-detection-engineer",
+      "category": "security",
+      "path": "agents/security-threat-detection-engineer.toml",
+      "sha256": "e6b0766a5567e047a12707f500dc3c275a8fc2c8ce1ea733a3ce7e8e8f9c0f54",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "security-threat-intelligence-analyst",
+      "category": "security",
+      "path": "agents/security-threat-intelligence-analyst.toml",
+      "sha256": "3e27badc655fc63a02d30d4cb9242eefa87d6d15ffa5feb17a4ed08fb53f68f3",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-ai-policy-writer",
+      "category": "specialized",
+      "path": "agents/specialized-ai-policy-writer.toml",
+      "sha256": "cfa7198ba84c9080cb119cfb77a1253a106b505086d390267bef50127d8d81fc",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-chief-of-staff",
+      "category": "specialized",
+      "path": "agents/specialized-chief-of-staff.toml",
+      "sha256": "7d144b7eccf47fad6464212e15fe808f5e317e8da2da88a305a5e647c5391ce4",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-civil-engineer",
+      "category": "specialized",
+      "path": "agents/specialized-civil-engineer.toml",
+      "sha256": "a54fb5b654817de7289edf6589ef3707806bd83028d3ae8cf05a0bf0f8af0b8b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-cultural-intelligence-strategist",
+      "category": "specialized",
+      "path": "agents/specialized-cultural-intelligence-strategist.toml",
+      "sha256": "aa96afeaa42f40c6af004f03c61990ee9cf1326eb87b7ddddddc06b5a9cf6e22",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-developer-advocate",
+      "category": "specialized",
+      "path": "agents/specialized-developer-advocate.toml",
+      "sha256": "a47033b67258f2fa44c243f1928f4c5e2588e9bf64e3a7104fa300433b58b0d1",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-document-generator",
+      "category": "specialized",
+      "path": "agents/specialized-document-generator.toml",
+      "sha256": "3dcfe7a4f12165942b6a2efc2962d99bfc34c3778f91f3421b2268d7da02c832",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-french-consulting-market",
+      "category": "specialized",
+      "path": "agents/specialized-french-consulting-market.toml",
+      "sha256": "74b2cd691ac5e71f43fb7008bf0be3b9a638d015631c7312e9e7e30d05409e08",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-korean-business-navigator",
+      "category": "specialized",
+      "path": "agents/specialized-korean-business-navigator.toml",
+      "sha256": "76111909cf272a926356f2a9a69b9fff0b321820b7ef6cb90c4a1a440615289b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-mcp-builder",
+      "category": "specialized",
+      "path": "agents/specialized-mcp-builder.toml",
+      "sha256": "d423458a20141843926b56bfc2bc14abf8691a854278ae4354d28c4bf40079e0",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-meeting-assistant",
+      "category": "specialized",
+      "path": "agents/specialized-meeting-assistant.toml",
+      "sha256": "c4ca5b970f2fd5bc9b88f621cc278104d79541532902a4820a3dfe5faf7c1bda",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-model-qa",
+      "category": "specialized",
+      "path": "agents/specialized-model-qa.toml",
+      "sha256": "fe55c9dd54e01a5bd4ca564d50ae7efdfc534c805495a8c8706ca08d8a6718a5",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-pricing-analyst",
+      "category": "specialized",
+      "path": "agents/specialized-pricing-analyst.toml",
+      "sha256": "c1b0573c8b34ad3d91b0c59bdbe279900ea8fb5d5603435c222527d1e7f821a6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-pricing-optimizer",
+      "category": "specialized",
+      "path": "agents/specialized-pricing-optimizer.toml",
+      "sha256": "cdd3c88c378a2b1f6e7e8703763828ba77105bfc55819ca1759f233b348cb472",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-risk-assessor",
+      "category": "specialized",
+      "path": "agents/specialized-risk-assessor.toml",
+      "sha256": "d680e00eff6da090ef596b881cbf38a2f642688fa43dbad37087d44c834053b8",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-salesforce-architect",
+      "category": "specialized",
+      "path": "agents/specialized-salesforce-architect.toml",
+      "sha256": "421997508304f2f0f3f7b5278fe5c6aeaf671a4be6d3dd7c2f090d471b1a682b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-strategy-duel-agent",
+      "category": "specialized",
+      "path": "agents/specialized-strategy-duel-agent.toml",
+      "sha256": "7303d302d810e88a11540a54dbc3a4b72bab71c446d28c139e6020765469ccee",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "specialized-workflow-architect",
+      "category": "specialized",
+      "path": "agents/specialized-workflow-architect.toml",
+      "sha256": "3f6027bd0d54a4d9bf5254e2db1e3c252d68be34da3e81a98b79edf67c8142cc",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "study-abroad-advisor",
+      "category": "specialized",
+      "path": "agents/study-abroad-advisor.toml",
+      "sha256": "feeb4f9bb68a2b840c51d9031c8bcef0eded0392c06ff85330a8126e522aeb99",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "supply-chain-garment-factory-planning-engineer",
+      "category": "supply-chain",
+      "path": "agents/supply-chain-garment-factory-planning-engineer.toml",
+      "sha256": "0a1137b3975d8bd575c110479883a21227a8e092d767cad0b6da2aad066a1ac8",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "supply-chain-inventory-forecaster",
+      "category": "supply-chain",
+      "path": "agents/supply-chain-inventory-forecaster.toml",
+      "sha256": "ff2978a84b7ecf13446a905d4585bb577f1e98993f3ab0691caf2237a780f754",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "supply-chain-route-optimizer",
+      "category": "supply-chain",
+      "path": "agents/supply-chain-route-optimizer.toml",
+      "sha256": "fe51a70d37aef663a6b0993ad8af7f5835e7a58ddf160e10d52d9a42b04031c3",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "supply-chain-strategist",
+      "category": "supply-chain",
+      "path": "agents/supply-chain-strategist.toml",
+      "sha256": "fd0d36e4c4c1af45c51f35224892e5b9af2c7148a80671f29fa14054a5aa37db",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "supply-chain-vendor-evaluator",
+      "category": "supply-chain",
+      "path": "agents/supply-chain-vendor-evaluator.toml",
+      "sha256": "586f902a961c88d5a0ef7dd03b5e57831074f3979bbf49e90e9c4f068e2c1db0",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "support-analytics-reporter",
+      "category": "support",
+      "path": "agents/support-analytics-reporter.toml",
+      "sha256": "36d58f3a2a38dcdf2c30e35698fe48dd2399083281136967b38eb1495fe1d70c",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "support-executive-summary-generator",
+      "category": "support",
+      "path": "agents/support-executive-summary-generator.toml",
+      "sha256": "8df2918fe13cd66e65f732c3c130c0cee573483bdab70e0a41e684ccf9cdac6b",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "support-finance-tracker",
+      "category": "support",
+      "path": "agents/support-finance-tracker.toml",
+      "sha256": "9866024d17e3441a40a0e86f3c159e20797d9348d6cc93e8c325947f4bf3f3ad",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "support-infrastructure-maintainer",
+      "category": "support",
+      "path": "agents/support-infrastructure-maintainer.toml",
+      "sha256": "b51a6b1047526dd5754e00e6e7973677ce5f42062a854505b84e5c19dd85ccc2",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "support-legal-compliance-checker",
+      "category": "support",
+      "path": "agents/support-legal-compliance-checker.toml",
+      "sha256": "5bb3d3992a72c0c82057d6b709598b5a98d4336ebd3f8fd62ed063ffaac71080",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "support-recruitment-specialist",
+      "category": "support",
+      "path": "agents/support-recruitment-specialist.toml",
+      "sha256": "ee0370996ef5438961b67509f766e8df6e749c2e02b9b74de431b3c8cbb8b3a5",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "support-support-responder",
+      "category": "support",
+      "path": "agents/support-support-responder.toml",
+      "sha256": "e97e8fa9bbcbf996d90bc8275ebf2dc5b4f2ac333f172edd828a2c719e1ad379",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "technical-artist",
+      "category": "game-development",
+      "path": "agents/technical-artist.toml",
+      "sha256": "3edc9ef29cdd5caa0a943681034ec8e54bb2ce1d4721e88389b2119a9446f6b1",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "technical-translator-agent",
+      "category": "specialized",
+      "path": "agents/technical-translator-agent.toml",
+      "sha256": "3bddc863630e83e3c268e0e121d12dc60a68040f1f835ad0ad19aba2f946cbbb",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "terminal-integration-specialist",
+      "category": "spatial-computing",
+      "path": "agents/terminal-integration-specialist.toml",
+      "sha256": "3776549b6bd55d86b367f07e23615a7f90f58e69c310fa0b4ebbeee8a53ef57d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "testing-accessibility-auditor",
+      "category": "testing",
+      "path": "agents/testing-accessibility-auditor.toml",
+      "sha256": "a04c9f03912b67c642344b290145e0ce141eeea64f5e17659c2f4ae787fad731",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "testing-api-tester",
+      "category": "testing",
+      "path": "agents/testing-api-tester.toml",
+      "sha256": "e86ee0f83c2fd2348491f6aaacf9936a99e19148b14219935cfd6756e39d8620",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "testing-embedded-qa-engineer",
+      "category": "testing",
+      "path": "agents/testing-embedded-qa-engineer.toml",
+      "sha256": "87c9cdea8dcd43459196ef027a14b3bd937d88448bcf84b41dc9d1ac59096ff4",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "testing-evidence-collector",
+      "category": "testing",
+      "path": "agents/testing-evidence-collector.toml",
+      "sha256": "2ab4b845296b40bca91a7d455961ff2397966ec21f7c709ea99e8a8a104fadb1",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "testing-performance-benchmarker",
+      "category": "testing",
+      "path": "agents/testing-performance-benchmarker.toml",
+      "sha256": "3706c4a1a95cb47c55b54282c31ad233d521bd210596e27969f7f5b741f6052f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "testing-reality-checker",
+      "category": "testing",
+      "path": "agents/testing-reality-checker.toml",
+      "sha256": "b0ea4211bc3900956f9498c14274b66afcaac21fcbadc89d656a0a8794e5218f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "testing-test-results-analyzer",
+      "category": "testing",
+      "path": "agents/testing-test-results-analyzer.toml",
+      "sha256": "373d3781f4dd8d52d5f43dba1f0a4e969e3806e6147b548e4cc3bb4a2f1fce6d",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "testing-tool-evaluator",
+      "category": "testing",
+      "path": "agents/testing-tool-evaluator.toml",
+      "sha256": "6ff89515bdc87cbe9223e29e4b95c48ff6b58d05a124592d5f6befbd528e08e5",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "testing-workflow-optimizer",
+      "category": "testing",
+      "path": "agents/testing-workflow-optimizer.toml",
+      "sha256": "f433efbd9b0c1f409b8ed937d5860bef6adc6e0415b7007c910e26ebf77c5c76",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "unity-architect",
+      "category": "game-development",
+      "path": "agents/unity-architect.toml",
+      "sha256": "a47a2851345acd699942301e36a13a9b9c556b10305386a49acf53efd9367407",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "unity-editor-tool-developer",
+      "category": "game-development",
+      "path": "agents/unity-editor-tool-developer.toml",
+      "sha256": "3f7f51d9d3edb2fd36ef29a65087ac6adaed4cd9687edb846f7dc9f52cece299",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "unity-multiplayer-engineer",
+      "category": "game-development",
+      "path": "agents/unity-multiplayer-engineer.toml",
+      "sha256": "ed182a8db75a5adeae7fc0044ca7cce94f7bd5b9cf7a399a2e56f1838bc0bd8f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "unity-shader-graph-artist",
+      "category": "game-development",
+      "path": "agents/unity-shader-graph-artist.toml",
+      "sha256": "6511b8a9f83d9a04c543c1c1ba848d57b1ab37f63cf68e3528dd070275a296b3",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "unreal-multiplayer-architect",
+      "category": "game-development",
+      "path": "agents/unreal-multiplayer-architect.toml",
+      "sha256": "36b613565682d536c8c52369657f912a6e590529220785320048a489ff6aaec1",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "unreal-systems-engineer",
+      "category": "game-development",
+      "path": "agents/unreal-systems-engineer.toml",
+      "sha256": "22e4eb2a69056f12e1c88e3fa962ce4c9e977cbf3774d1ce4ec2d2829fa36dd6",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "unreal-technical-artist",
+      "category": "game-development",
+      "path": "agents/unreal-technical-artist.toml",
+      "sha256": "0c01f7109c0138d2e1bf9091e259b685fb533f477fe674af2eb4c493d7ec6221",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "unreal-world-builder",
+      "category": "game-development",
+      "path": "agents/unreal-world-builder.toml",
+      "sha256": "2d13ec863c36a2b862410c05796f7ba8c36e09b4b401dc52872035147d965794",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "visionos-spatial-engineer",
+      "category": "spatial-computing",
+      "path": "agents/visionos-spatial-engineer.toml",
+      "sha256": "47bb166fdd9b696d205c544de67485aee8b696a617278ee173bfe39217d92487",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "xr-cockpit-interaction-specialist",
+      "category": "spatial-computing",
+      "path": "agents/xr-cockpit-interaction-specialist.toml",
+      "sha256": "3a552889233ffe5042a186aa5be987f2c02fc4d996284a74ff0af872993fbc3f",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "xr-immersive-developer",
+      "category": "spatial-computing",
+      "path": "agents/xr-immersive-developer.toml",
+      "sha256": "4a08acc819fc58494fcb62e2e9b5e4cf7a9ae306165e92d477ab30dd7f515996",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "xr-interface-architect",
+      "category": "spatial-computing",
+      "path": "agents/xr-interface-architect.toml",
+      "sha256": "02ad0b76449da53611e101bffc4c462b5ce98d001ea824a0082ecbc2eebe2429",
+      "source": "jnMetaCode/agency-agents-zh"
+    },
+    {
+      "slug": "zk-steward",
+      "category": "specialized",
+      "path": "agents/zk-steward.toml",
+      "sha256": "407c3b7d8b885754c0f685031fc212b38b4dfe22a460a8ec33906e715823c202",
+      "source": "jnMetaCode/agency-agents-zh"
+    }
+  ]
+}
