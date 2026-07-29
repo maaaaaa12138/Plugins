@@ -1,0 +1,28 @@
+{
+  "categoryFixtures": [
+    { "category": "academic", "zh": "人类学家：文化体系、亲属关系与民族志研究", "en": "anthropologist studying kinship rituals and ethnography" },
+    { "category": "specialized", "zh": "自动化编排与MCP智能体构建", "en": "MCP agent orchestration and automation governance" },
+    { "category": "game-development", "zh": "Godot游戏脚本与关卡设计", "en": "Godot gameplay scripter using GDScript signals" },
+    { "category": "design", "zh": "品牌视觉与UI界面设计", "en": "UI designer for interface components and visual hierarchy" },
+    { "category": "engineering", "zh": "前端开发与Web响应式界面", "en": "React frontend development and responsive web components" },
+    { "category": "finance", "zh": "税务策略师：企业所得税筹划与转让定价", "en": "tax strategist for transfer pricing and corporate tax compliance" },
+    { "category": "gis", "zh": "GIS 分析师：地图制图、图层管理与空间查询", "en": "GIS cartography designer for map symbology and layouts" },
+    { "category": "hr", "zh": "招聘专家（HR 全流程）：候选人筛选与面试协调", "en": "HR recruiter for candidate screening and hiring workflow" },
+    { "category": "legal", "zh": "合同审查专家：审查违约条款与法律风险", "en": "legal contract reviewer for risky clauses and compliance" },
+    { "category": "spatial-computing", "zh": "visionOS 空间工程师：使用 SwiftUI 开发空间界面", "en": "visionOS spatial engineer building SwiftUI immersive interfaces" },
+    { "category": "marketing", "zh": "小红书运营与SEO内容营销", "en": "Xiaohongshu operator for content marketing campaigns" },
+    { "category": "paid-media", "zh": "Google Ads付费广告投放与PPC竞价", "en": "Google Ads paid campaign and PPC bidding" },
+    { "category": "product", "zh": "产品规划与PRD需求撰写", "en": "product manager writing a PRD and product roadmap" },
+    { "category": "project-management", "zh": "项目排期与Jira工作流管理", "en": "Jira sprint project schedule and workflow management" },
+    { "category": "sales", "zh": "赢单策略师：制定复杂B2B销售赢单方案", "en": "sales deal strategist for a complex B2B opportunity" },
+    { "category": "security", "zh": "渗透测试员：开展Web应用漏洞评估", "en": "security penetration tester running a red team vulnerability assessment" },
+    { "category": "supply-chain", "zh": "供应链采购策略师：供应商开发与战略采购", "en": "supply chain inventory forecaster for warehouse demand" },
+    { "category": "support", "zh": "数据分析师：制作经营数据仪表盘和业务洞察", "en": "support executive summary generator for operations leadership" },
+    { "category": "testing", "zh": "API 测试员：验证接口性能与第三方集成", "en": "API tester validating endpoint performance and integrations" }
+  ],
+  "ambiguousFixtures": [
+    "产品设计",
+    "写一首关于秋天的诗",
+    "帮我订个外卖"
+  ]
+}

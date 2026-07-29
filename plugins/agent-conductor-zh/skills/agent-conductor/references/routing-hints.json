@@ -1,0 +1,506 @@
+{
+  "version": 1,
+  "config": {
+    "minTopScore": 12,
+    "minSeparation": 4,
+    "defaultAgent": "default",
+    "normalize": "nfkc+lowercase-latin"
+  },
+  "weights": {
+    "curatedPhrase": 16,
+    "exactNameOrSlug": 14,
+    "slugContains": 8,
+    "nameContains": 7,
+    "descContains": 3,
+    "haystackContains": 1,
+    "bigramRecall": 1
+  },
+  "categories": [
+    "academic",
+    "design",
+    "engineering",
+    "finance",
+    "game-development",
+    "gis",
+    "hr",
+    "legal",
+    "marketing",
+    "paid-media",
+    "product",
+    "project-management",
+    "sales",
+    "security",
+    "spatial-computing",
+    "specialized",
+    "supply-chain",
+    "support",
+    "testing"
+  ],
+  "hints": [
+    {
+      "id": "frontend-ui",
+      "phrases": [
+        "前端开发",
+        "前端页面",
+        "Web 前端",
+        "UI 组件",
+        "网页界面",
+        "后台管理页面"
+      ],
+      "patterns": [
+        "前端|网页|web|react|vue|angular|响应式|后台页面|管理界面|dashboard|组件库|css|html|javascript|typescript|tailwind"
+      ],
+      "categoryBoosts": {
+        "engineering": 4,
+        "design": 2
+      },
+      "agentBoosts": {
+        "engineering-frontend-developer": 12,
+        "design-ui-designer": 8,
+        "design-ux-architect": 6
+      },
+      "penalties": {
+        "engineering-incident-response-commander": -8,
+        "security-incident-responder": -8,
+        "support-support-responder": -8
+      }
+    },
+    {
+      "id": "backend-api",
+      "phrases": [
+        "后端开发",
+        "后端架构",
+        "API 设计",
+        "服务端开发",
+        "数据库架构",
+        "微服务"
+      ],
+      "patterns": [
+        "后端|服务端|api|数据库|微服务|云基础设施|接口设计|sql|server|backend|rest|graphql"
+      ],
+      "categoryBoosts": {
+        "engineering": 5
+      },
+      "agentBoosts": {
+        "engineering-backend-architect": 11,
+        "engineering-database-optimizer": 7,
+        "engineering-software-architect": 6,
+        "engineering-ai-engineer": 5
+      }
+    },
+    {
+      "id": "security-review",
+      "phrases": [
+        "代码安全审查",
+        "漏洞扫描",
+        "渗透测试",
+        "安全架构",
+        "威胁建模",
+        "合规审计"
+      ],
+      "patterns": [
+        "代码审查|代码审核|review|审计|漏洞|认证|授权|安全|token|cookie|cors|csp|密钥|加密|渗透|security|penetration|vulnerab|red team|threat model|appsec"
+      ],
+      "categoryBoosts": {
+        "security": 6,
+        "engineering": 2,
+        "testing": 1
+      },
+      "agentBoosts": {
+        "engineering-code-reviewer": 10,
+        "security-appsec-engineer": 9,
+        "security-senior-secops": 9,
+        "security-architect": 8,
+        "security-penetration-tester": 8
+      }
+    },
+    {
+      "id": "testing-qa",
+      "phrases": [
+        "软件测试",
+        "质量保障",
+        "自动化测试",
+        "API 测试",
+        "无障碍审核",
+        "回归测试"
+      ],
+      "patterns": [
+        "测试|test|qa|回归|验收|质量|无障碍|可访问性|性能测试|自动化测试|e2e|单元测试"
+      ],
+      "categoryBoosts": {
+        "testing": 7,
+        "engineering": 2
+      },
+      "agentBoosts": {
+        "testing-reality-checker": 10,
+        "testing-accessibility-auditor": 8,
+        "testing-api-tester": 8,
+        "testing-embedded-qa-engineer": 6
+      }
+    },
+    {
+      "id": "product",
+      "phrases": [
+        "产品规划",
+        "需求分析",
+        "PRD 撰写",
+        "产品路线图",
+        "用户研究",
+        "产品策略"
+      ],
+      "patterns": [
+        "产品|需求|prd|用户流程|路线图|商业模式|用户研究|产品规划|growth"
+      ],
+      "categoryBoosts": {
+        "product": 6,
+        "design": 2
+      },
+      "agentBoosts": {
+        "product-manager": 12,
+        "design-ux-researcher": 7,
+        "product-trend-researcher": 6,
+        "product-feedback-synthesizer": 6
+      }
+    },
+    {
+      "id": "design-ux",
+      "phrases": [
+        "视觉设计",
+        "品牌设计",
+        "用户体验",
+        "交互设计",
+        "UI 设计",
+        "图像生成"
+      ],
+      "patterns": [
+        "设计|design|品牌|ui|ux|视觉|交互|图标|海报|排版|image prompt|用户画像|persona"
+      ],
+      "categoryBoosts": {
+        "design": 6
+      },
+      "agentBoosts": {
+        "design-ui-designer": 10,
+        "design-ux-architect": 9,
+        "design-brand-guardian": 8,
+        "design-image-prompt-engineer": 7,
+        "design-inclusive-visuals-specialist": 6
+      }
+    },
+    {
+      "id": "marketing",
+      "phrases": [
+        "内容营销",
+        "SEO 优化",
+        "社媒运营",
+        "品牌传播",
+        "小红书运营",
+        "抖音运营"
+      ],
+      "patterns": [
+        "营销|marketing|seo|sem|内容营销|社媒|小红书|抖音|公众号|品牌传播|增长|获客|aeo|geo"
+      ],
+      "categoryBoosts": {
+        "marketing": 6
+      },
+      "agentBoosts": {
+        "marketing-seo-specialist": 10,
+        "marketing-xiaohongshu-operator": 9,
+        "marketing-douyin-strategist": 9,
+        "marketing-aeo-foundations": 8,
+        "marketing-ai-citation-strategist": 8
+      }
+    },
+    {
+      "id": "paid-media",
+      "phrases": [
+        "付费广告",
+        "Google Ads",
+        "信息流投放",
+        "PPC 竞价",
+        "广告创意"
+      ],
+      "patterns": [
+        "付费广告|广告|ads|ppc|信息流|投放|paid media|google ads|meta ads|roas"
+      ],
+      "categoryBoosts": {
+        "paid-media": 7,
+        "marketing": 2
+      },
+      "agentBoosts": {
+        "paid-media-ppc-strategist": 10,
+        "paid-media-paid-social-strategist": 9,
+        "paid-media-creative-strategist": 8,
+        "paid-media-auditor": 7
+      }
+    },
+    {
+      "id": "sales",
+      "phrases": [
+        "销售策略",
+        "赢单",
+        "客户拓展",
+        "销售教练",
+        "需求发现"
+      ],
+      "patterns": [
+        "销售|sales|赢单|客户拓展|商机|pipeline|deal|meddpicc|售前|转化"
+      ],
+      "categoryBoosts": {
+        "sales": 6
+      },
+      "agentBoosts": {
+        "sales-deal-strategist": 11,
+        "sales-coach": 9,
+        "sales-discovery-coach": 8,
+        "sales-account-strategist": 8,
+        "sales-engineer": 7
+      }
+    },
+    {
+      "id": "game-dev",
+      "phrases": [
+        "游戏开发",
+        "关卡设计",
+        "Godot 脚本",
+        "Blender 插件",
+        "游戏音频"
+      ],
+      "patterns": [
+        "游戏|game|godot|blender|roblox|unity|unreal|关卡|游戏引擎|游戏设计|游戏音频|游戏美术"
+      ],
+      "categoryBoosts": {
+        "game-development": 6,
+        "engineering": 2
+      },
+      "agentBoosts": {
+        "game-designer": 10,
+        "godot-gameplay-scripter": 9,
+        "blender-addon-engineer": 9,
+        "game-audio-engineer": 8
+      }
+    },
+    {
+      "id": "gis-geo",
+      "phrases": [
+        "地理信息系统",
+        "地图制图",
+        "空间分析",
+        "三维地理",
+        "BIM/GIS"
+      ],
+      "patterns": [
+        "gis|地理|地图|空间分析|制图|arcgis|cesium|webgis|bim|遥感|utm"
+      ],
+      "categoryBoosts": {
+        "gis": 6
+      },
+      "agentBoosts": {
+        "gis-analyst": 10,
+        "gis-web-gis-developer": 8,
+        "gis-cartography-designer": 8,
+        "gis-bim-specialist": 7,
+        "gis-3d-scene-developer": 7
+      }
+    },
+    {
+      "id": "spatial-xr",
+      "phrases": [
+        "空间计算",
+        "visionOS 开发",
+        "Metal 渲染",
+        "XR 交互",
+        "3D 渲染"
+      ],
+      "patterns": [
+        "空间计算|spatial|visionos|metal|swift|xr|vr|ar|三维渲染|终端模拟|swiftui"
+      ],
+      "categoryBoosts": {
+        "spatial-computing": 6
+      },
+      "agentBoosts": {
+        "visionos-spatial-engineer": 10,
+        "macos-spatial-metal-engineer": 9,
+        "xr-cockpit-interaction-specialist": 8,
+        "terminal-integration-specialist": 6
+      }
+    },
+    {
+      "id": "finance-accounting",
+      "phrases": [
+        "财务分析",
+        "税务筹划",
+        "簿记",
+        "预算编制",
+        "现金流预测"
+      ],
+      "patterns": [
+        "财务|finance|会计|税务|预算|现金流|报表|fpa|簿记|发票|记账|预测|tax|accounting|budget|cash flow|invoice|forecast|transfer pricing"
+      ],
+      "categoryBoosts": {
+        "finance": 6
+      },
+      "agentBoosts": {
+        "finance-financial-analyst": 10,
+        "finance-tax-strategist": 9,
+        "finance-fpa-analyst": 8,
+        "finance-bookkeeper-controller": 8,
+        "finance-financial-forecaster": 7,
+        "finance-invoice-manager": 6
+      }
+    },
+    {
+      "id": "hr",
+      "phrases": [
+        "招聘流程",
+        "绩效管理",
+        "人才盘点",
+        "OKR/KPI"
+      ],
+      "patterns": [
+        "招聘|hr|绩效|okr|kpi|人才|面试|薪酬|人力|recruit|hiring|candidate|performance|talent|interview"
+      ],
+      "categoryBoosts": {
+        "hr": 6
+      },
+      "agentBoosts": {
+        "hr-recruiter": 10,
+        "hr-performance-reviewer": 9
+      }
+    },
+    {
+      "id": "legal-compliance",
+      "phrases": [
+        "合同审查",
+        "合规制度",
+        "数据合规",
+        "法律文书"
+      ],
+      "patterns": [
+        "合同|法律|legal|合规|隐私政策|用户协议|民法典|制度文件|审查"
+      ],
+      "categoryBoosts": {
+        "legal": 6
+      },
+      "agentBoosts": {
+        "legal-contract-reviewer": 10,
+        "legal-policy-writer": 9
+      }
+    },
+    {
+      "id": "supply-chain",
+      "phrases": [
+        "供应链管理",
+        "库存预测",
+        "物流路线",
+        "采购策略",
+        "工厂规划"
+      ],
+      "patterns": [
+        "供应链|supply chain|库存|物流|采购|route|工厂规划|仓储|冷链"
+      ],
+      "categoryBoosts": {
+        "supply-chain": 6
+      },
+      "agentBoosts": {
+        "supply-chain-strategist": 10,
+        "supply-chain-inventory-forecaster": 8,
+        "supply-chain-route-optimizer": 8,
+        "supply-chain-garment-factory-planning-engineer": 7
+      }
+    },
+    {
+      "id": "academic-research",
+      "phrases": [
+        "世界观构建",
+        "学术考证",
+        "文化体系",
+        "叙事结构",
+        "历史一致性"
+      ],
+      "patterns": [
+        "学术|anthropolog|geograph|histor|叙事|文化|世界观|神话|语言|文献"
+      ],
+      "categoryBoosts": {
+        "academic": 6
+      },
+      "agentBoosts": {
+        "academic-anthropologist": 10,
+        "academic-historian": 9,
+        "academic-geographer": 9,
+        "academic-narratologist": 8,
+        "academic-study-planner": 7
+      }
+    },
+    {
+      "id": "project-management",
+      "phrases": [
+        "项目管理",
+        "敏捷迭代",
+        "项目排期",
+        "会议纪要",
+        "Jira 工作流"
+      ],
+      "patterns": [
+        "项目|project|敏捷|scrum|sprint|排期|里程碑|jira|会议纪要|风险|干系人|甘特"
+      ],
+      "categoryBoosts": {
+        "project-management": 6
+      },
+      "agentBoosts": {
+        "project-management-project-shepherd": 10,
+        "project-manager-senior": 9,
+        "project-management-jira-workflow-steward": 8,
+        "project-management-meeting-notes-specialist": 7,
+        "project-management-experiment-tracker": 6
+      }
+    },
+    {
+      "id": "support-analytics",
+      "phrases": [
+        "数据分析",
+        "经营分析",
+        "高管摘要",
+        "基础设施运维",
+        "客服支持"
+      ],
+      "patterns": [
+        "数据分析|数据看板|报表|摘要|运维|基础设施|客服|support|executive|洞察|kpi 跟踪|财务追踪"
+      ],
+      "categoryBoosts": {
+        "support": 6
+      },
+      "agentBoosts": {
+        "support-analytics-reporter": 10,
+        "support-executive-summary-generator": 9,
+        "support-infrastructure-maintainer": 8,
+        "support-finance-tracker": 7,
+        "support-legal-compliance-checker": 6,
+        "support-support-responder": 6
+      }
+    },
+    {
+      "id": "specialized-longtail",
+      "phrases": [
+        "政务智能体",
+        "医疗健康",
+        "身份认证",
+        "自动化编排",
+        "MCP 构建",
+        "物联网"
+      ],
+      "patterns": [
+        "政务|医疗|医保|健康|身份|信任|编排|orchestrat|自动化|mcp|物联网|iot|区块链|供应链金融|教育|法务"
+      ],
+      "categoryBoosts": {
+        "specialized": 5
+      },
+      "agentBoosts": {
+        "agents-orchestrator": 9,
+        "agentic-identity-trust": 8,
+        "automation-governance-architect": 7,
+        "specialized-mcp-builder": 7,
+        "accounts-payable-agent": 6
+      }
+    }
+  ]
+}
