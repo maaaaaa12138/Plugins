@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Conductor 中文专家团"
+  short_description: "根据任务目标自动选择并协调268个中文专业Agent"
+  default_prompt: "请根据我的目标自动选择合适的中文专家 Agent，并返回经过验证的结果。"

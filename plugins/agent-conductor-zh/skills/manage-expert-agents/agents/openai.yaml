@@ -1,0 +1,4 @@
+interface:
+  display_name: "管理中文专家 Agent"
+  short_description: "安全安装、更新和卸载268个中文专业Agent角色"
+  default_prompt: "请先检查当前专家 Agent 状态，再按默认全局模式安全安装并保留所有冲突文件。"
