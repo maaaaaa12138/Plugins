@@ -112,10 +112,17 @@ Routing uses a hybrid matching strategy:
 - score curated full-phrase and department matches most strongly;
 - score exact role names, slugs, and meaningful Latin terms next;
 - retain Chinese bigrams only as a lower-weight recall fallback;
+- keep Chinese bigrams out of the ordinary token score so the same evidence is
+  never counted twice;
 - expose matched hints and score evidence in router output so weak matches can
   be rejected by the parent Agent;
 - fall back to the default Agent when no candidate clears the confidence and
   separation thresholds.
+
+Confidence is evaluated against the complete ranked candidate set. The router
+computes the top-versus-runner-up separation before applying the caller's
+output `limit`; requesting one result therefore cannot hide a tie or otherwise
+bypass ambiguity fallback.
 
 Both scripts accept `scope` with `auto`, `global`, `project`, or `bundled` and
 an explicit project root when project scope is requested. `auto` resolves a
@@ -125,19 +132,22 @@ considered only when the caller supplies or reliably resolves the current
 project root; the router never guesses an unrelated working directory.
 Bundled resolution derives the plugin root from the router script's canonical
 location, not the caller's working directory, and verifies that the resolved
-file remains inside `assets/agents/`.
+file remains inside `assets/agents/`. A path is returned only when the TOML file
+actually exists; a syntactically valid but missing bundled path is a resolution
+failure.
 
 Each candidate includes `agent_type`, `agent_file`, and `agent_source`. The
 router returns the actual resolved path instead of hard-coding
 `~/.codex/agents/<slug>.toml`. The `agent_source` value is `project`, `global`,
 or `bundled`.
 
-When a selected native Agent type is unavailable, compatibility mode starts a
-default subagent and instructs it to read the candidate's returned
+When a selected native Agent type is unavailable, compatibility mode starts the
+built-in `default` subagent and instructs it to read the candidate's returned
 `agent_file`. Before managed setup this resolves to the bundled TOML. After
 setup it resolves to the selected project or global installation. `SKILL.md`
 must use the router result and must not construct a global path itself. This
 keeps compatibility mode functional both before and after native-role setup.
+The Skill identifier `agent-conductor` is never used as an Agent type.
 
 ### Role bundle and manifest
 
@@ -189,6 +199,11 @@ Managed state is stored outside the role directory:
 State records the plugin version, role-bundle version, scope, target directory,
 source hash, installed hash, installation time, and operation ID for each owned
 file.
+
+All PowerShell entry points and tests support Windows PowerShell 5.1 as well as
+PowerShell 7. Path composition uses nested two-argument `Join-Path` calls or an
+equivalent 5.1-compatible helper; no script relies on newer multi-segment
+parameter binding.
 
 ## Installation Flow
 
@@ -268,11 +283,19 @@ Required checks before release:
 - run representative Chinese and English routing fixtures for every department,
   plus ambiguous and unrelated queries that must fall back safely;
 - assert JavaScript and PowerShell routers return equivalent rankings, matched
-  hints, confidence data, scope, source, and role paths for the same fixtures;
+  hints, confidence data, scope, source, and role paths for fixtures covering
+  all 19 role-bearing categories;
 - test tokenizer normalization, curated phrase priority, and low-weight Chinese
-  bigram fallback independently;
+  bigram fallback independently, including an assertion that bigram evidence is
+  not also included in ordinary token scoring;
 - test role-path resolution for pre-install bundled mode, global mode, explicit
-  project mode, auto precedence, and missing-file fallback;
+  project mode, auto precedence, and missing-file fallback, asserting that every
+  successful `agent_file` exists;
+- run the standalone PowerShell test entry point from its documented location
+  and require it to resolve the real router rather than a test-local path;
+- treat every PowerShell invocation or JSON parse failure as a test failure;
+  only an explicit, independently verified absence of PowerShell may skip the
+  cross-runtime suite, and a skipped suite must never print `ALL TESTS PASSED`;
 - run installer integration tests against temporary global and project roots;
 - test fresh install, idempotent install, update, user-modified conflict,
   pre-existing file conflict, partial failure recovery, and uninstall;
