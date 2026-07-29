@@ -47,3 +47,37 @@ test("plugin files keep LF endings so manifest hashes are stable", () => {
     /^plugins\/agent-conductor-zh\/\*\* text eol=lf$/m,
   );
 });
+
+test("PowerShell management entry point is Windows 5.1 compatible", () => {
+  const wrapper = fs.readFileSync(
+    path.join(pluginRoot, "scripts", "manage-agents.ps1"),
+    "utf8",
+  );
+  assert.match(wrapper, /^\[CmdletBinding\(\)\]/);
+  assert.match(wrapper, /ValidateSet\("status", "install", "update", "uninstall"\)/);
+  assert.match(wrapper, /ValidateSet\("global", "project"\)/);
+  assert.match(wrapper, /\[string\]\$Scope = "global"/);
+  assert.match(wrapper, /\[switch\]\$DryRun/);
+  assert.match(wrapper, /\[switch\]\$Json/);
+  assert.match(wrapper, /Node\.js 18 or newer/);
+  assert.match(wrapper, /exit \$LASTEXITCODE/);
+  assert.doesNotMatch(wrapper, /Invoke-Expression/);
+});
+
+test("README documents private setup, compatibility, and conservative management", () => {
+  const readme = fs.readFileSync(path.join(pluginRoot, "README.md"), "utf8");
+  assert.match(readme, /private repository/i);
+  assert.match(readme, /collaborator/i);
+  assert.match(readme, /compatibility mode/i);
+  assert.match(readme, /bundled/i);
+  assert.match(readme, /global scope is the default/i);
+  assert.match(readme, /project scope is optional/i);
+  for (const action of ["status", "install", "update", "uninstall"]) {
+    assert.match(readme, new RegExp(`-Action ${action}\\b`));
+  }
+  assert.match(readme, /-DryRun/);
+  assert.match(readme, /never overwrite/i);
+  assert.match(readme, /new Codex task/i);
+  assert.match(readme, /jnMetaCode\/agency-agents-zh/);
+  assert.match(readme, /MIT/);
+});
