@@ -39,3 +39,11 @@ test("plugin and marketplace expose agent-conductor-zh", () => {
     assert.equal(manifest[unsupported], undefined);
   }
 });
+
+test("plugin files keep LF endings so manifest hashes are stable", () => {
+  const attributes = fs.readFileSync(path.join(repoRoot, ".gitattributes"), "utf8");
+  assert.match(
+    attributes,
+    /^plugins\/agent-conductor-zh\/\*\* text eol=lf$/m,
+  );
+});
