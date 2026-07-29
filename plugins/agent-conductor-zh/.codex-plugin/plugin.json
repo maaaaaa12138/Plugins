@@ -1,0 +1,22 @@
+{
+  "name": "agent-conductor-zh",
+  "version": "1.0.0",
+  "description": "Route work to a private bundle of 268 Chinese specialist Codex Agents.",
+  "author": {
+    "name": "maaaaaa12138",
+    "url": "https://github.com/maaaaaa12138"
+  },
+  "homepage": "https://github.com/maaaaaa12138/Plugins/tree/main/plugins/agent-conductor-zh",
+  "repository": "https://github.com/maaaaaa12138/Plugins",
+  "keywords": ["agents", "routing", "chinese", "productivity"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agent Conductor 中文专家团",
+    "shortDescription": "自动选择并协调 268 个中文专业 Agent。",
+    "longDescription": "根据任务目标选择最合适的中文专家角色，并提供可控的全局或项目级 Agent 安装管理。",
+    "developerName": "maaaaaa12138",
+    "category": "Productivity",
+    "capabilities": ["Interactive"],
+    "defaultPrompt": "请根据我的目标自动选择合适的中文专家 Agent，并给出经过验证的结果。"
+  }
+}
