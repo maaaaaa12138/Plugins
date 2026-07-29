@@ -25,6 +25,8 @@ default; project installation remains available as an option.
 - Register roles as native Codex custom Agents through an explicit setup action.
 - Default to global installation in `~/.codex/agents/`.
 - Support project-scoped installation in `<project>/.codex/agents/`.
+- Route representative tasks across every role-bearing category in the pinned
+  index instead of relying on six hard-coded domain boosts.
 - Preserve user-modified Agent files during update and uninstall.
 - Keep the plugin usable in compatibility mode before native roles are installed.
 - Retain upstream MIT license notices and source attribution.
@@ -55,6 +57,7 @@ Plugins/
         │   │   ├── SKILL.md
         │   │   ├── agents/openai.yaml
         │   │   ├── references/agent-index.json
+        │   │   ├── references/routing-hints.json
         │   │   └── scripts/
         │   └── manage-expert-agents/
         │       └── SKILL.md
@@ -94,10 +97,47 @@ task summary, chooses one primary role and at most two useful reviewers, keeps
 one writer per file scope, waits for delegated results, and validates the final
 result in the parent thread.
 
-The router index points to the bundled role snapshot. When a selected native
-Agent type is unavailable, compatibility mode starts a default subagent and
-instructs it to read the matching bundled TOML before processing the bounded
-task. This keeps the plugin useful before the explicit native-role setup runs.
+The router index points to the bundled role snapshot. Both router
+implementations load the same `references/routing-hints.json`; routing hints are
+not duplicated in JavaScript and PowerShell. The shared file covers every
+role-bearing category in the pinned index with Chinese and English domain
+phrases, category boosts, and only the narrow agent-specific boosts that have a
+clear owner. The same file also owns token weights, the minimum top score, and
+the minimum separation from the runner-up so the two script implementations
+cannot drift in confidence behavior.
+
+Routing uses a hybrid matching strategy:
+
+- normalize text with Unicode NFKC and lower-case Latin text;
+- score curated full-phrase and department matches most strongly;
+- score exact role names, slugs, and meaningful Latin terms next;
+- retain Chinese bigrams only as a lower-weight recall fallback;
+- expose matched hints and score evidence in router output so weak matches can
+  be rejected by the parent Agent;
+- fall back to the default Agent when no candidate clears the confidence and
+  separation thresholds.
+
+Both scripts accept `scope` with `auto`, `global`, `project`, or `bundled` and
+an explicit project root when project scope is requested. `auto` resolves a
+role file in this order: the current project's `.codex/agents/`, the global
+`~/.codex/agents/`, then the plugin's `assets/agents/`. A project path is
+considered only when the caller supplies or reliably resolves the current
+project root; the router never guesses an unrelated working directory.
+Bundled resolution derives the plugin root from the router script's canonical
+location, not the caller's working directory, and verifies that the resolved
+file remains inside `assets/agents/`.
+
+Each candidate includes `agent_type`, `agent_file`, and `agent_source`. The
+router returns the actual resolved path instead of hard-coding
+`~/.codex/agents/<slug>.toml`. The `agent_source` value is `project`, `global`,
+or `bundled`.
+
+When a selected native Agent type is unavailable, compatibility mode starts a
+default subagent and instructs it to read the candidate's returned
+`agent_file`. Before managed setup this resolves to the bundled TOML. After
+setup it resolves to the selected project or global installation. `SKILL.md`
+must use the router result and must not construct a global path itself. This
+keeps compatibility mode functional both before and after native-role setup.
 
 ### Role bundle and manifest
 
@@ -106,6 +146,7 @@ task. This keeps the plugin useful before the explicit native-role setup runs.
 - plugin role-bundle version;
 - upstream repository and pinned commit or release;
 - role count;
+- role-bearing category count;
 - each role's slug, relative path, SHA-256 hash, and source attribution;
 - schema version used by the installer.
 
@@ -113,6 +154,16 @@ Every TOML must define non-empty `name`, `description`, and
 `developer_instructions` fields. Filenames and names must be unique. Slugs are
 restricted to a conservative allowlist and cannot contain path separators or
 parent-directory segments.
+
+The build also validates that `routing-hints.json` declares every category
+present in `agent-index.json`. A missing or unknown department fails validation
+rather than silently degrading to token overlap.
+
+The current 268-role index contains 19 role-bearing categories. The upstream
+README describes 20 departments because `strategy/` is counted in the source
+organization, but that directory contains operating documents rather than
+Agent definitions and therefore does not appear in the routing index. Coverage
+is derived from the index instead of hard-coding either number.
 
 ### Managed installer
 
@@ -154,6 +205,9 @@ file.
    verified by hash, and atomically renamed into place.
 7. State is written only after all accepted role operations finish.
 8. The user starts a new Codex task so custom Agent discovery refreshes.
+9. Subsequent router calls use `auto` scope, preferring project roles when the
+   current project has a managed installation, then global roles, then the
+   bundled compatibility copy.
 
 ## Update and Conflict Rules
 
@@ -209,6 +263,16 @@ Required checks before release:
 - verify the marketplace schema and relative source path;
 - parse all TOML files and assert exactly 268 unique names and filenames;
 - regenerate and verify all SHA-256 values in `roles-manifest.json`;
+- assert that shared routing hints cover every category in the role index and
+  that the current pinned snapshot contains 19 role-bearing categories;
+- run representative Chinese and English routing fixtures for every department,
+  plus ambiguous and unrelated queries that must fall back safely;
+- assert JavaScript and PowerShell routers return equivalent rankings, matched
+  hints, confidence data, scope, source, and role paths for the same fixtures;
+- test tokenizer normalization, curated phrase priority, and low-weight Chinese
+  bigram fallback independently;
+- test role-path resolution for pre-install bundled mode, global mode, explicit
+  project mode, auto precedence, and missing-file fallback;
 - run installer integration tests against temporary global and project roots;
 - test fresh install, idempotent install, update, user-modified conflict,
   pre-existing file conflict, partial failure recovery, and uninstall;
@@ -230,8 +294,14 @@ managed `update` action for native role files.
   marketplace.
 - A collaborator with repository access can install the plugin.
 - Agent Conductor works in compatibility mode immediately after plugin install.
+- Routing fixtures cover every role-bearing category in the pinned index and
+  both router implementations produce equivalent results.
+- Compatibility mode reads bundled TOML files before managed setup and never
+  assumes a global file exists.
 - Global setup installs exactly 268 validated native Agent files.
 - Project setup installs the same pinned set without touching global Agents.
+- Router candidates report the correct project, global, or bundled role path for
+  the active scope.
 - User-modified and unrelated Agent files survive update and uninstall.
 - A new Codex task can route to and spawn the installed specialist roles.
 
