@@ -1,0 +1,6 @@
+interface:
+  display_name: Codemao Script Card
+  short_description: 编程猫家长异议话术卡
+  default_prompt: 为我生成一张编程猫家长异议处理话术卡
+  icon_small: "./assets/codemao-icon.png"
+  icon_large: "./assets/codemao-icon.png"

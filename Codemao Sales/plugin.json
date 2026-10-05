@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codemao-sales",
+  "version": "0.1.15",
+  "description": "Codemao sales strategy and objection response workflows.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Codemao Sales",
+        "logo": "./assets/codemao-logo.png",
+        "composerIcon": "./assets/codemao-logo.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Codemao Sales Brain"
+  short_description: "编程猫销售策略与话术编排中枢"
+  icon_small: "./assets/codemao-icon.png"
+  icon_large: "./assets/codemao-icon.png"
