@@ -1,4 +1,5 @@
-/Codemao Sales/Objection Response Library/
+/Codemao Sales/Objection Response Library/*
+!/Codemao Sales/Objection Response Library/README.md
 /Codemao Sales ORL Originals/
 /Codemao Sales/orl-import-*/
 /Codemao Sales/**/__pycache__/
