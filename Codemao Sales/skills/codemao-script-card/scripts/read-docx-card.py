@@ -6,6 +6,7 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import sys
 import xml.etree.ElementTree as ET
 import zipfile
@@ -21,6 +22,7 @@ A = "{http://schemas.openxmlformats.org/drawingml/2006/main}"
 SKILL_DIR = Path(__file__).resolve().parent.parent
 PLUGIN_ROOT = SKILL_DIR.parent.parent
 SET_TITLE = re.compile(r"第[一二三四五六七八九十\d]+(?:套|次)|方案[一二三四五六七八九十\d]+|版本\s*\d+|(?:精简|拒绝)?话术\s*[一二三四五六七八九十\d]+|试学\s*\d+|通用版本|Python衔接版本")
+MATERIAL_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp"}
 
 
 def documents_at(path):
@@ -31,6 +33,56 @@ def documents_at(path):
                        if item.is_file() and item.suffix.lower() == ".docx"
                        and not item.name.startswith("~$")), key=lambda item: item.name.casefold())
     return []
+
+
+def shortcut_target(path):
+    """Resolve a Windows .lnk without requiring an extra Python package."""
+    if os.name != "nt":
+        return None, "快捷方式只支持 Windows .lnk"
+    script = (
+        "$shell = New-Object -ComObject WScript.Shell; "
+        "$shortcut = $shell.CreateShortcut($env:CODEMAO_SHORTCUT); "
+        "[Console]::Out.Write($shortcut.TargetPath)"
+    )
+    try:
+        result = subprocess.run(
+            ["powershell.exe", "-NoProfile", "-NonInteractive", "-Command", script],
+            capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=5,
+            env={**os.environ, "CODEMAO_SHORTCUT": str(path)},
+        )
+    except (FileNotFoundError, subprocess.SubprocessError) as exc:
+        return None, f"无法解析快捷方式：{exc}"
+    target = result.stdout.strip()
+    if result.returncode != 0 or not target:
+        detail = result.stderr.strip() or "目标为空"
+        return None, f"无法解析快捷方式：{detail}"
+    return Path(target), None
+
+
+def materials_at(root):
+    """Find images in ORL and in valid top-level .lnk target folders."""
+    if not root or not root.exists() or not root.is_dir():
+        return [], []
+    materials = []
+    warnings = []
+    for item in sorted(root.iterdir(), key=lambda value: value.name.casefold()):
+        if item.is_file() and item.suffix.lower() == ".lnk":
+            target, warning = shortcut_target(item)
+            if warning:
+                warnings.append({"shortcut": str(item.resolve()), "warning": warning})
+                continue
+            if not target.exists() or not target.is_dir():
+                warnings.append({"shortcut": str(item.resolve()), "target": str(target),
+                                 "warning": "快捷方式目标不存在或不是文件夹"})
+                continue
+            for image in sorted(target.rglob("*"), key=lambda value: str(value).casefold()):
+                if image.is_file() and image.suffix.lower() in MATERIAL_SUFFIXES:
+                    materials.append({"shortcut": str(item.resolve()), "target": str(target.resolve()),
+                                       "filename": image.name, "path": str(image.resolve())})
+        elif item.is_file() and item.suffix.lower() in MATERIAL_SUFFIXES:
+            materials.append({"shortcut": None, "target": str(root.resolve()),
+                               "filename": item.name, "path": str(item.resolve())})
+    return materials, warnings
 
 
 def source_paths(explicit):
@@ -46,6 +98,15 @@ def source_paths(explicit):
     if sources:
         return sources
     raise FileNotFoundError(f"找不到 DOCX 异议文档；请放入插件的 {source}，或用 CODEMAO_AMMO_DIR / --source 指定")
+
+
+def material_root(explicit, sources):
+    if explicit:
+        path = Path(explicit).expanduser()
+        return path if path.is_dir() else path.parent
+    if sources:
+        return sources[0].parent
+    return None
 
 
 def heading_level(paragraph):
@@ -198,11 +259,17 @@ def main():
     parser.add_argument("--source", help="DOCX 文件或含多份 DOCX 的文件夹")
     parser.add_argument("--out-dir", type=Path, default=Path.home() / ".codex" / "cache" / "codemao-script-card")
     parser.add_argument("--list", action="store_true", help="列出各文档中的标题")
+    parser.add_argument("--materials", action="store_true", help="列出 ORL 中可用的图形化物料")
     args = parser.parse_args()
     try:
         if args.set_number < 1:
             raise ValueError("--set 必须大于 0")
         sources = source_paths(args.source)
+        materials, material_warnings = materials_at(material_root(args.source, sources))
+        if args.materials:
+            print(json.dumps({"materials": materials, "material_warnings": material_warnings},
+                             ensure_ascii=False, indent=2))
+            return 0
         documents = []
         matches = []
         for source in sources:
@@ -214,7 +281,8 @@ def main():
                 matches.extend((rank, source, title, records)
                                for rank, title in matching_headings(args.query, available))
         if args.list:
-            result = {"sources": documents}
+            result = {"sources": documents, "materials": materials,
+                      "material_warnings": material_warnings}
             if len(documents) == 1:
                 result.update(documents[0])
             print(json.dumps(result, ensure_ascii=False, indent=2))
