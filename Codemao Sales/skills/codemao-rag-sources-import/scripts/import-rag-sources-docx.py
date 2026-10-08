@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Inspect and normalize a DOCX for the Codemao objection response library."""
+"""Inspect and normalize a DOCX for Codemao rag-sources."""
 
 import argparse
 import json
@@ -235,9 +235,9 @@ def plugin_source(explicit):
 
 
 def commit(output, root, labels):
-    library = root / "Objection Response Library"
+    library = root / "rag-sources"
     library.mkdir(exist_ok=True)
-    backup_root = root.parent / f"{root.name} ORL Originals"
+    backup_root = root.parent / f"{root.name} rag-sources Originals"
     existing = sorted(path for path in library.iterdir()
                       if path.is_file() and path.suffix.lower() == ".docx"
                       and not path.name.startswith("~$"))
@@ -264,8 +264,8 @@ def commit(output, root, labels):
 
 
 def install(source, plan, root):
-    with tempfile.TemporaryDirectory(prefix="orl-import-", dir=root) as workspace:
-        stem = source.stem if source.stem.endswith("-ORL") else f"{source.stem}-ORL"
+    with tempfile.TemporaryDirectory(prefix="rag-sources-import-", dir=root) as workspace:
+        stem = source.stem if source.stem.endswith("-rag-sources") else f"{source.stem}-rag-sources"
         output = Path(workspace) / f"{stem}.docx"
         objections = normalize(source, output, plan)
         verify(output, objections)
@@ -278,7 +278,7 @@ def adopt(source, root):
         labels = reader["headings"](reader["read_document"](archive))
     if not labels:
         raise ValueError("原件没有可识别标题，请先检查并整理异议边界")
-    with tempfile.TemporaryDirectory(prefix="orl-adopt-", dir=root) as workspace:
+    with tempfile.TemporaryDirectory(prefix="rag-sources-adopt-", dir=root) as workspace:
         output = Path(workspace) / source.name
         shutil.copy2(source, output)
         commit(output, root, labels)

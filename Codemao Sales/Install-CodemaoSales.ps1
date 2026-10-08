@@ -1,6 +1,23 @@
 $ErrorActionPreference = 'Stop'
 
 $pluginRoot = Split-Path -Parent $PSCommandPath
+$legacySources = Join-Path $pluginRoot 'Objection Response Library'
+$ragSources = Join-Path $pluginRoot 'rag-sources'
+if (Test-Path -LiteralPath $legacySources -PathType Container) {
+    New-Item -ItemType Directory -Path $ragSources -Force | Out-Null
+    $legacyItems = @(Get-ChildItem -LiteralPath $legacySources -Force | Where-Object {
+        $_.Name -ne '把自己的话术文档放在这里.md'
+    })
+    foreach ($item in $legacyItems) {
+        $target = Join-Path $ragSources $item.Name
+        if (Test-Path -LiteralPath $target) {
+            throw "Cannot migrate $($item.FullName): destination already exists at $target"
+        }
+    }
+    foreach ($item in $legacyItems) {
+        Move-Item -LiteralPath $item.FullName -Destination (Join-Path $ragSources $item.Name)
+    }
+}
 $manifest = Get-Content -LiteralPath (Join-Path $pluginRoot 'plugin.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $marketplace = Get-Content -LiteralPath (Join-Path $pluginRoot '.agents\plugins\marketplace.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $template = Join-Path $pluginRoot 'assets\agents\Codemao Sales Brain.toml'
@@ -11,10 +28,16 @@ if (-not (Test-Path -LiteralPath $template -PathType Leaf)) {
 $codexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $env:USERPROFILE '.codex' }
 $agentDir = Join-Path $codexHome 'agents'
 $agentTarget = Join-Path $agentDir 'Codemao Sales Brain.toml'
-if ((Test-Path -LiteralPath $agentTarget) -and
-    ((Get-FileHash -LiteralPath $template -Algorithm SHA256).Hash -ne
-     (Get-FileHash -LiteralPath $agentTarget -Algorithm SHA256).Hash)) {
-    throw "A different named agent already exists: $agentTarget. Review it before replacing it."
+if (Test-Path -LiteralPath $agentTarget) {
+    $currentAgent = [IO.File]::ReadAllText($agentTarget)
+    $updatedAgent = $currentAgent.Replace('ORL', 'rag-sources')
+    if ($updatedAgent -ne $currentAgent) {
+        [IO.File]::WriteAllText($agentTarget, $updatedAgent, [Text.UTF8Encoding]::new($false))
+    }
+    if ((Get-FileHash -LiteralPath $template -Algorithm SHA256).Hash -ne
+        (Get-FileHash -LiteralPath $agentTarget -Algorithm SHA256).Hash) {
+        Write-Warning "Existing named agent differs from the plugin template: $agentTarget. Review its rules if needed."
+    }
 }
 
 $codex = (Get-Command codex -ErrorAction Stop).Source

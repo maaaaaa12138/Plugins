@@ -1,6 +1,0 @@
-interface:
-  display_name: "Codemao ORL Import"
-  short_description: "自动整理并导入个人弹药库 DOCX 文档"
-  default_prompt: "使用 $codemao-orl-import 把这份 DOCX 设为我的弹药库"
-  icon_small: "./assets/codemao-icon.png"
-  icon_large: "./assets/codemao-icon.png"

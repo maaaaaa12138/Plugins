@@ -60,7 +60,7 @@ def shortcut_target(path):
 
 
 def materials_at(root):
-    """Find images in ORL and in valid top-level .lnk target folders."""
+    """Find images in rag-sources and in valid top-level .lnk target folders."""
     if not root or not root.exists() or not root.is_dir():
         return [], []
     materials = []
@@ -86,18 +86,18 @@ def materials_at(root):
 
 
 def source_paths(explicit):
-    configured = explicit or os.environ.get("CODEMAO_AMMO_DIR")
+    configured = explicit or os.environ.get("CODEMAO_RAG_SOURCES_DIR") or os.environ.get("CODEMAO_AMMO_DIR")
     if configured:
         path = Path(configured).expanduser()
         sources = documents_at(path)
         if not sources:
             raise FileNotFoundError(f"找不到 DOCX 文档：{path}")
         return sources
-    source = PLUGIN_ROOT / "Objection Response Library"
+    source = PLUGIN_ROOT / "rag-sources"
     sources = documents_at(source)
     if sources:
         return sources
-    raise FileNotFoundError(f"找不到 DOCX 异议文档；请放入插件的 {source}，或用 CODEMAO_AMMO_DIR / --source 指定")
+    raise FileNotFoundError(f"找不到 DOCX 异议文档；请放入插件的 {source}，或用 CODEMAO_RAG_SOURCES_DIR / --source 指定")
 
 
 def material_root(explicit, sources):
@@ -259,7 +259,7 @@ def main():
     parser.add_argument("--source", help="DOCX 文件或含多份 DOCX 的文件夹")
     parser.add_argument("--out-dir", type=Path, default=Path.home() / ".codex" / "cache" / "codemao-script-card")
     parser.add_argument("--list", action="store_true", help="列出各文档中的标题")
-    parser.add_argument("--materials", action="store_true", help="列出 ORL 中可用的图形化物料")
+    parser.add_argument("--materials", action="store_true", help="列出 rag-sources 中可用的图形化物料")
     args = parser.parse_args()
     try:
         if args.set_number < 1:

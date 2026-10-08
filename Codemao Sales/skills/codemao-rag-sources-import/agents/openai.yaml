@@ -1,0 +1,6 @@
+interface:
+  display_name: "Codemao RAG Sources Import"
+  short_description: "自动整理并导入个人话术 DOCX 到 rag-sources"
+  default_prompt: "使用 $codemao-rag-sources-import 把这份 DOCX 导入 rag-sources"
+  icon_small: "./assets/codemao-icon.png"
+  icon_large: "./assets/codemao-icon.png"

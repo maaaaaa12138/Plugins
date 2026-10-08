@@ -1,6 +1,9 @@
+/Codemao Sales/rag-sources/*
+!/Codemao Sales/rag-sources/把自己的话术文档放在这里.md
 /Codemao Sales/Objection Response Library/*
-!/Codemao Sales/Objection Response Library/把自己的话术文档放在这里.md
+/Codemao Sales rag-sources Originals/
 /Codemao Sales ORL Originals/
+/Codemao Sales/rag-sources-import-*/
 /Codemao Sales/orl-import-*/
 /Codemao Sales/**/__pycache__/
 /Codemao Sales/**/*.pyc
